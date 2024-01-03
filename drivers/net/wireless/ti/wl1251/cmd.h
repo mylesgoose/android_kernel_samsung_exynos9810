@@ -347,7 +347,7 @@ struct wl1251_cmd_trigger_scan_to {
 
 /* HW encryption keys */
 #define NUM_ACCESS_CATEGORIES_COPY 4
-#define MAX_KEY_SIZE 32
+#define MAX_KEY_SIZE 64
 
 /* When set, disable HW encryption */
 #define DF_ENCRYPTION_DISABLE      0x01

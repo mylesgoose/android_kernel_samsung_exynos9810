@@ -5889,25 +5889,33 @@ static struct sk_buff *ath10k_wmi_10_4_op_gen_init(struct ath10k *ar)
 
 int ath10k_wmi_start_scan_verify(const struct wmi_start_scan_arg *arg)
 {
-	if (arg->ie_len && !arg->ie)
-		return -EINVAL;
-	if (arg->n_channels && !arg->channels)
-		return -EINVAL;
-	if (arg->n_ssids && !arg->ssids)
-		return -EINVAL;
-	if (arg->n_bssids && !arg->bssids)
-		return -EINVAL;
+    if (arg->ie_len > 0 && arg->ie == NULL) {
+        return -EINVAL;
+    }
+    if (arg->n_channels > 0 && arg->channels == NULL) {
+        return -EINVAL;
+    }
+    if (arg->n_ssids > 0 && arg->ssids == NULL) {
+        return -EINVAL;
+    }
+    if (arg->n_bssids > 0 && arg->bssids == NULL) {
+        return -EINVAL;
+    }
 
-	if (arg->ie_len > WLAN_SCAN_PARAMS_MAX_IE_LEN)
-		return -EINVAL;
-	if (arg->n_channels > ARRAY_SIZE(arg->channels))
-		return -EINVAL;
-	if (arg->n_ssids > WLAN_SCAN_PARAMS_MAX_SSID)
-		return -EINVAL;
-	if (arg->n_bssids > WLAN_SCAN_PARAMS_MAX_BSSID)
-		return -EINVAL;
+    if (arg->ie_len > WLAN_SCAN_PARAMS_MAX_IE_LEN) {
+        return -EINVAL;
+    }
+    if (arg->n_channels > ARRAY_SIZE(arg->channels)) {
+        return -EINVAL;
+    }
+    if (arg->n_ssids > WLAN_SCAN_PARAMS_MAX_SSID) {
+        return -EINVAL;
+    }
+    if (arg->n_bssids > WLAN_SCAN_PARAMS_MAX_BSSID) {
+        return -EINVAL;
+    }
 
-	return 0;
+    return 0;
 }
 
 static size_t

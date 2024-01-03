@@ -678,9 +678,9 @@ static int PowerScan(struct tda_state *state,
 			Count = 200000;
 			wait = true;
 		}
-		status = status;
-		if (status < 0)
-			break;
+		
+		
+			
 		if (CID_Gain >= CID_Target) {
 			*pbcal = true;
 			*pRF_Out = freq_MainPLL - 1000000;

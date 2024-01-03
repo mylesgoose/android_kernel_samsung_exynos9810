@@ -143,9 +143,9 @@ static const struct ar9300_eeprom ar9300_default = {
 		.tempslopextension = {0, 0, 0, 0, 0, 0, 0, 0}
 	},
 	.calFreqPier2G = {
-		FREQ2FBIN(2412, 1),
-		FREQ2FBIN(2437, 1),
-		FREQ2FBIN(2472, 1),
+		(u8)FREQ2FBIN(2412, 1),
+		(u8)FREQ2FBIN(2437, 1),
+		(u8)FREQ2FBIN(2472, 1),
 	 },
 	/* ar9300_cal_data_per_freq_op_loop 2g */
 	.calPierData2G = {
@@ -154,23 +154,23 @@ static const struct ar9300_eeprom ar9300_default = {
 		{ {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0} },
 	 },
 	.calTarget_freqbin_Cck = {
-		FREQ2FBIN(2412, 1),
-		FREQ2FBIN(2484, 1),
+		(u8)FREQ2FBIN(2412, 1),
+		(u8)FREQ2FBIN(2484, 1),
 	 },
 	.calTarget_freqbin_2G = {
-		FREQ2FBIN(2412, 1),
-		FREQ2FBIN(2437, 1),
-		FREQ2FBIN(2472, 1)
+		(u8)FREQ2FBIN(2412, 1),
+		(u8)FREQ2FBIN(2437, 1),
+		(u8)FREQ2FBIN(2472, 1)
 	 },
 	.calTarget_freqbin_2GHT20 = {
-		FREQ2FBIN(2412, 1),
-		FREQ2FBIN(2437, 1),
-		FREQ2FBIN(2472, 1)
+		(u8)FREQ2FBIN(2412, 1),
+		(u8)FREQ2FBIN(2437, 1),
+		(u8)FREQ2FBIN(2472, 1)
 	 },
 	.calTarget_freqbin_2GHT40 = {
-		FREQ2FBIN(2412, 1),
-		FREQ2FBIN(2437, 1),
-		FREQ2FBIN(2472, 1)
+		(u8)FREQ2FBIN(2412, 1),
+		(u8)FREQ2FBIN(2437, 1),
+		(u8)FREQ2FBIN(2472, 1)
 	 },
 	.calTargetPowerCck = {
 		 /* 1L-5L,5S,11L,11S */
@@ -199,84 +199,84 @@ static const struct ar9300_eeprom ar9300_default = {
 	},
 	.ctl_freqbin_2G = {
 		{
-			FREQ2FBIN(2412, 1),
-			FREQ2FBIN(2417, 1),
-			FREQ2FBIN(2457, 1),
-			FREQ2FBIN(2462, 1)
+			(u8)FREQ2FBIN(2412, 1),
+			(u8)FREQ2FBIN(2417, 1),
+			(u8)FREQ2FBIN(2457, 1),
+			(u8)FREQ2FBIN(2462, 1)
 		},
 		{
-			FREQ2FBIN(2412, 1),
-			FREQ2FBIN(2417, 1),
-			FREQ2FBIN(2462, 1),
+			(u8)FREQ2FBIN(2412, 1),
+			(u8)FREQ2FBIN(2417, 1),
+			(u8)FREQ2FBIN(2462, 1),
 			0xFF,
 		},
 
 		{
-			FREQ2FBIN(2412, 1),
-			FREQ2FBIN(2417, 1),
-			FREQ2FBIN(2462, 1),
+			(u8)FREQ2FBIN(2412, 1),
+			(u8)FREQ2FBIN(2417, 1),
+			(u8)FREQ2FBIN(2462, 1),
 			0xFF,
 		},
 		{
-			FREQ2FBIN(2422, 1),
-			FREQ2FBIN(2427, 1),
-			FREQ2FBIN(2447, 1),
-			FREQ2FBIN(2452, 1)
+			(u8)FREQ2FBIN(2422, 1),
+			(u8)FREQ2FBIN(2427, 1),
+			(u8)FREQ2FBIN(2447, 1),
+			(u8)FREQ2FBIN(2452, 1)
 		},
 
 		{
-			/* Data[4].ctlEdges[0].bChannel */ FREQ2FBIN(2412, 1),
-			/* Data[4].ctlEdges[1].bChannel */ FREQ2FBIN(2417, 1),
-			/* Data[4].ctlEdges[2].bChannel */ FREQ2FBIN(2472, 1),
-			/* Data[4].ctlEdges[3].bChannel */ FREQ2FBIN(2484, 1),
+			/* Data[4].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2412, 1),
+			/* Data[4].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2417, 1),
+			/* Data[4].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(2472, 1),
+			/* Data[4].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(2484, 1),
 		},
 
 		{
-			/* Data[5].ctlEdges[0].bChannel */ FREQ2FBIN(2412, 1),
-			/* Data[5].ctlEdges[1].bChannel */ FREQ2FBIN(2417, 1),
-			/* Data[5].ctlEdges[2].bChannel */ FREQ2FBIN(2472, 1),
+			/* Data[5].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2412, 1),
+			/* Data[5].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2417, 1),
+			/* Data[5].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(2472, 1),
 			0,
 		},
 
 		{
-			/* Data[6].ctlEdges[0].bChannel */ FREQ2FBIN(2412, 1),
-			/* Data[6].ctlEdges[1].bChannel */ FREQ2FBIN(2417, 1),
-			FREQ2FBIN(2472, 1),
+			/* Data[6].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2412, 1),
+			/* Data[6].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2417, 1),
+			(u8)FREQ2FBIN(2472, 1),
 			0,
 		},
 
 		{
-			/* Data[7].ctlEdges[0].bChannel */ FREQ2FBIN(2422, 1),
-			/* Data[7].ctlEdges[1].bChannel */ FREQ2FBIN(2427, 1),
-			/* Data[7].ctlEdges[2].bChannel */ FREQ2FBIN(2447, 1),
-			/* Data[7].ctlEdges[3].bChannel */ FREQ2FBIN(2462, 1),
+			/* Data[7].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2422, 1),
+			/* Data[7].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2427, 1),
+			/* Data[7].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(2447, 1),
+			/* Data[7].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(2462, 1),
 		},
 
 		{
-			/* Data[8].ctlEdges[0].bChannel */ FREQ2FBIN(2412, 1),
-			/* Data[8].ctlEdges[1].bChannel */ FREQ2FBIN(2417, 1),
-			/* Data[8].ctlEdges[2].bChannel */ FREQ2FBIN(2472, 1),
+			/* Data[8].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2412, 1),
+			/* Data[8].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2417, 1),
+			/* Data[8].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(2472, 1),
 		},
 
 		{
-			/* Data[9].ctlEdges[0].bChannel */ FREQ2FBIN(2412, 1),
-			/* Data[9].ctlEdges[1].bChannel */ FREQ2FBIN(2417, 1),
-			/* Data[9].ctlEdges[2].bChannel */ FREQ2FBIN(2472, 1),
+			/* Data[9].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2412, 1),
+			/* Data[9].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2417, 1),
+			/* Data[9].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(2472, 1),
 			0
 		},
 
 		{
-			/* Data[10].ctlEdges[0].bChannel */ FREQ2FBIN(2412, 1),
-			/* Data[10].ctlEdges[1].bChannel */ FREQ2FBIN(2417, 1),
-			/* Data[10].ctlEdges[2].bChannel */ FREQ2FBIN(2472, 1),
+			/* Data[10].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2412, 1),
+			/* Data[10].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2417, 1),
+			/* Data[10].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(2472, 1),
 			0
 		},
 
 		{
-			/* Data[11].ctlEdges[0].bChannel */ FREQ2FBIN(2422, 1),
-			/* Data[11].ctlEdges[1].bChannel */ FREQ2FBIN(2427, 1),
-			/* Data[11].ctlEdges[2].bChannel */ FREQ2FBIN(2447, 1),
-			/* Data[11].ctlEdges[3].bChannel */ FREQ2FBIN(2462, 1),
+			/* Data[11].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2422, 1),
+			/* Data[11].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2427, 1),
+			/* Data[11].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(2447, 1),
+			/* Data[11].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(2462, 1),
 		}
 	 },
 	.ctlPowerData_2G = {
@@ -349,14 +349,14 @@ static const struct ar9300_eeprom ar9300_default = {
 		.xatten1MarginHigh = {0, 0, 0}
 	},
 	.calFreqPier5G = {
-		FREQ2FBIN(5180, 0),
-		FREQ2FBIN(5220, 0),
-		FREQ2FBIN(5320, 0),
-		FREQ2FBIN(5400, 0),
-		FREQ2FBIN(5500, 0),
-		FREQ2FBIN(5600, 0),
-		FREQ2FBIN(5725, 0),
-		FREQ2FBIN(5825, 0)
+		(u8)FREQ2FBIN(5180, 0),
+		(u8)FREQ2FBIN(5220, 0),
+		(u8)FREQ2FBIN(5320, 0),
+		(u8)FREQ2FBIN(5400, 0),
+		(u8)FREQ2FBIN(5500, 0),
+		(u8)FREQ2FBIN(5600, 0),
+		(u8)FREQ2FBIN(5725, 0),
+		(u8)FREQ2FBIN(5825, 0)
 	},
 	.calPierData5G = {
 			{
@@ -392,34 +392,34 @@ static const struct ar9300_eeprom ar9300_default = {
 
 	},
 	.calTarget_freqbin_5G = {
-		FREQ2FBIN(5180, 0),
-		FREQ2FBIN(5220, 0),
-		FREQ2FBIN(5320, 0),
-		FREQ2FBIN(5400, 0),
-		FREQ2FBIN(5500, 0),
-		FREQ2FBIN(5600, 0),
-		FREQ2FBIN(5725, 0),
-		FREQ2FBIN(5825, 0)
+		(u8)FREQ2FBIN(5180, 0),
+		(u8)FREQ2FBIN(5220, 0),
+		(u8)FREQ2FBIN(5320, 0),
+		(u8)FREQ2FBIN(5400, 0),
+		(u8)FREQ2FBIN(5500, 0),
+		(u8)FREQ2FBIN(5600, 0),
+		(u8)FREQ2FBIN(5725, 0),
+		(u8)FREQ2FBIN(5825, 0)
 	},
 	.calTarget_freqbin_5GHT20 = {
-		FREQ2FBIN(5180, 0),
-		FREQ2FBIN(5240, 0),
-		FREQ2FBIN(5320, 0),
-		FREQ2FBIN(5500, 0),
-		FREQ2FBIN(5700, 0),
-		FREQ2FBIN(5745, 0),
-		FREQ2FBIN(5725, 0),
-		FREQ2FBIN(5825, 0)
+		(u8)FREQ2FBIN(5180, 0),
+		(u8)FREQ2FBIN(5240, 0),
+		(u8)FREQ2FBIN(5320, 0),
+		(u8)FREQ2FBIN(5500, 0),
+		(u8)FREQ2FBIN(5700, 0),
+		(u8)FREQ2FBIN(5745, 0),
+		(u8)FREQ2FBIN(5725, 0),
+		(u8)FREQ2FBIN(5825, 0)
 	},
 	.calTarget_freqbin_5GHT40 = {
-		FREQ2FBIN(5180, 0),
-		FREQ2FBIN(5240, 0),
-		FREQ2FBIN(5320, 0),
-		FREQ2FBIN(5500, 0),
-		FREQ2FBIN(5700, 0),
-		FREQ2FBIN(5745, 0),
-		FREQ2FBIN(5725, 0),
-		FREQ2FBIN(5825, 0)
+		(u8)FREQ2FBIN(5180, 0),
+		(u8)FREQ2FBIN(5240, 0),
+		(u8)FREQ2FBIN(5320, 0),
+		(u8)FREQ2FBIN(5500, 0),
+		(u8)FREQ2FBIN(5700, 0),
+		(u8)FREQ2FBIN(5745, 0),
+		(u8)FREQ2FBIN(5725, 0),
+		(u8)FREQ2FBIN(5825, 0)
 	 },
 	.calTargetPower5G = {
 		/* 6-24,36,48,54 */
@@ -466,53 +466,53 @@ static const struct ar9300_eeprom ar9300_default = {
 	},
 	.ctl_freqbin_5G =  {
 		{
-			/* Data[0].ctlEdges[0].bChannel */ FREQ2FBIN(5180, 0),
-			/* Data[0].ctlEdges[1].bChannel */ FREQ2FBIN(5260, 0),
-			/* Data[0].ctlEdges[2].bChannel */ FREQ2FBIN(5280, 0),
-			/* Data[0].ctlEdges[3].bChannel */ FREQ2FBIN(5500, 0),
-			/* Data[0].ctlEdges[4].bChannel */ FREQ2FBIN(5600, 0),
-			/* Data[0].ctlEdges[5].bChannel */ FREQ2FBIN(5700, 0),
-			/* Data[0].ctlEdges[6].bChannel */ FREQ2FBIN(5745, 0),
-			/* Data[0].ctlEdges[7].bChannel */ FREQ2FBIN(5825, 0)
+			/* Data[0].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5180, 0),
+			/* Data[0].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5260, 0),
+			/* Data[0].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5280, 0),
+			/* Data[0].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5500, 0),
+			/* Data[0].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5600, 0),
+			/* Data[0].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5700, 0),
+			/* Data[0].ctlEdges[6].bChannel */ (u8)FREQ2FBIN(5745, 0),
+			/* Data[0].ctlEdges[7].bChannel */ (u8)FREQ2FBIN(5825, 0)
 		},
 		{
-			/* Data[1].ctlEdges[0].bChannel */ FREQ2FBIN(5180, 0),
-			/* Data[1].ctlEdges[1].bChannel */ FREQ2FBIN(5260, 0),
-			/* Data[1].ctlEdges[2].bChannel */ FREQ2FBIN(5280, 0),
-			/* Data[1].ctlEdges[3].bChannel */ FREQ2FBIN(5500, 0),
-			/* Data[1].ctlEdges[4].bChannel */ FREQ2FBIN(5520, 0),
-			/* Data[1].ctlEdges[5].bChannel */ FREQ2FBIN(5700, 0),
-			/* Data[1].ctlEdges[6].bChannel */ FREQ2FBIN(5745, 0),
-			/* Data[1].ctlEdges[7].bChannel */ FREQ2FBIN(5825, 0)
-		},
-
-		{
-			/* Data[2].ctlEdges[0].bChannel */ FREQ2FBIN(5190, 0),
-			/* Data[2].ctlEdges[1].bChannel */ FREQ2FBIN(5230, 0),
-			/* Data[2].ctlEdges[2].bChannel */ FREQ2FBIN(5270, 0),
-			/* Data[2].ctlEdges[3].bChannel */ FREQ2FBIN(5310, 0),
-			/* Data[2].ctlEdges[4].bChannel */ FREQ2FBIN(5510, 0),
-			/* Data[2].ctlEdges[5].bChannel */ FREQ2FBIN(5550, 0),
-			/* Data[2].ctlEdges[6].bChannel */ FREQ2FBIN(5670, 0),
-			/* Data[2].ctlEdges[7].bChannel */ FREQ2FBIN(5755, 0)
+			/* Data[1].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5180, 0),
+			/* Data[1].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5260, 0),
+			/* Data[1].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5280, 0),
+			/* Data[1].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5500, 0),
+			/* Data[1].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5520, 0),
+			/* Data[1].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5700, 0),
+			/* Data[1].ctlEdges[6].bChannel */ (u8)FREQ2FBIN(5745, 0),
+			/* Data[1].ctlEdges[7].bChannel */ (u8)FREQ2FBIN(5825, 0)
 		},
 
 		{
-			/* Data[3].ctlEdges[0].bChannel */ FREQ2FBIN(5180, 0),
-			/* Data[3].ctlEdges[1].bChannel */ FREQ2FBIN(5200, 0),
-			/* Data[3].ctlEdges[2].bChannel */ FREQ2FBIN(5260, 0),
-			/* Data[3].ctlEdges[3].bChannel */ FREQ2FBIN(5320, 0),
-			/* Data[3].ctlEdges[4].bChannel */ FREQ2FBIN(5500, 0),
-			/* Data[3].ctlEdges[5].bChannel */ FREQ2FBIN(5700, 0),
+			/* Data[2].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5190, 0),
+			/* Data[2].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5230, 0),
+			/* Data[2].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5270, 0),
+			/* Data[2].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5310, 0),
+			/* Data[2].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5510, 0),
+			/* Data[2].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5550, 0),
+			/* Data[2].ctlEdges[6].bChannel */ (u8)FREQ2FBIN(5670, 0),
+			/* Data[2].ctlEdges[7].bChannel */ (u8)FREQ2FBIN(5755, 0)
+		},
+
+		{
+			/* Data[3].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5180, 0),
+			/* Data[3].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5200, 0),
+			/* Data[3].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5260, 0),
+			/* Data[3].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5320, 0),
+			/* Data[3].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5500, 0),
+			/* Data[3].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5700, 0),
 			/* Data[3].ctlEdges[6].bChannel */ 0xFF,
 			/* Data[3].ctlEdges[7].bChannel */ 0xFF,
 		},
 
 		{
-			/* Data[4].ctlEdges[0].bChannel */ FREQ2FBIN(5180, 0),
-			/* Data[4].ctlEdges[1].bChannel */ FREQ2FBIN(5260, 0),
-			/* Data[4].ctlEdges[2].bChannel */ FREQ2FBIN(5500, 0),
-			/* Data[4].ctlEdges[3].bChannel */ FREQ2FBIN(5700, 0),
+			/* Data[4].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5180, 0),
+			/* Data[4].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5260, 0),
+			/* Data[4].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5500, 0),
+			/* Data[4].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5700, 0),
 			/* Data[4].ctlEdges[4].bChannel */ 0xFF,
 			/* Data[4].ctlEdges[5].bChannel */ 0xFF,
 			/* Data[4].ctlEdges[6].bChannel */ 0xFF,
@@ -520,47 +520,47 @@ static const struct ar9300_eeprom ar9300_default = {
 		},
 
 		{
-			/* Data[5].ctlEdges[0].bChannel */ FREQ2FBIN(5190, 0),
-			/* Data[5].ctlEdges[1].bChannel */ FREQ2FBIN(5270, 0),
-			/* Data[5].ctlEdges[2].bChannel */ FREQ2FBIN(5310, 0),
-			/* Data[5].ctlEdges[3].bChannel */ FREQ2FBIN(5510, 0),
-			/* Data[5].ctlEdges[4].bChannel */ FREQ2FBIN(5590, 0),
-			/* Data[5].ctlEdges[5].bChannel */ FREQ2FBIN(5670, 0),
+			/* Data[5].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5190, 0),
+			/* Data[5].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5270, 0),
+			/* Data[5].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5310, 0),
+			/* Data[5].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5510, 0),
+			/* Data[5].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5590, 0),
+			/* Data[5].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5670, 0),
 			/* Data[5].ctlEdges[6].bChannel */ 0xFF,
 			/* Data[5].ctlEdges[7].bChannel */ 0xFF
 		},
 
 		{
-			/* Data[6].ctlEdges[0].bChannel */ FREQ2FBIN(5180, 0),
-			/* Data[6].ctlEdges[1].bChannel */ FREQ2FBIN(5200, 0),
-			/* Data[6].ctlEdges[2].bChannel */ FREQ2FBIN(5220, 0),
-			/* Data[6].ctlEdges[3].bChannel */ FREQ2FBIN(5260, 0),
-			/* Data[6].ctlEdges[4].bChannel */ FREQ2FBIN(5500, 0),
-			/* Data[6].ctlEdges[5].bChannel */ FREQ2FBIN(5600, 0),
-			/* Data[6].ctlEdges[6].bChannel */ FREQ2FBIN(5700, 0),
-			/* Data[6].ctlEdges[7].bChannel */ FREQ2FBIN(5745, 0)
+			/* Data[6].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5180, 0),
+			/* Data[6].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5200, 0),
+			/* Data[6].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5220, 0),
+			/* Data[6].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5260, 0),
+			/* Data[6].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5500, 0),
+			/* Data[6].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5600, 0),
+			/* Data[6].ctlEdges[6].bChannel */ (u8)FREQ2FBIN(5700, 0),
+			/* Data[6].ctlEdges[7].bChannel */ (u8)FREQ2FBIN(5745, 0)
 		},
 
 		{
-			/* Data[7].ctlEdges[0].bChannel */ FREQ2FBIN(5180, 0),
-			/* Data[7].ctlEdges[1].bChannel */ FREQ2FBIN(5260, 0),
-			/* Data[7].ctlEdges[2].bChannel */ FREQ2FBIN(5320, 0),
-			/* Data[7].ctlEdges[3].bChannel */ FREQ2FBIN(5500, 0),
-			/* Data[7].ctlEdges[4].bChannel */ FREQ2FBIN(5560, 0),
-			/* Data[7].ctlEdges[5].bChannel */ FREQ2FBIN(5700, 0),
-			/* Data[7].ctlEdges[6].bChannel */ FREQ2FBIN(5745, 0),
-			/* Data[7].ctlEdges[7].bChannel */ FREQ2FBIN(5825, 0)
+			/* Data[7].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5180, 0),
+			/* Data[7].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5260, 0),
+			/* Data[7].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5320, 0),
+			/* Data[7].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5500, 0),
+			/* Data[7].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5560, 0),
+			/* Data[7].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5700, 0),
+			/* Data[7].ctlEdges[6].bChannel */ (u8)FREQ2FBIN(5745, 0),
+			/* Data[7].ctlEdges[7].bChannel */ (u8)FREQ2FBIN(5825, 0)
 		},
 
 		{
-			/* Data[8].ctlEdges[0].bChannel */ FREQ2FBIN(5190, 0),
-			/* Data[8].ctlEdges[1].bChannel */ FREQ2FBIN(5230, 0),
-			/* Data[8].ctlEdges[2].bChannel */ FREQ2FBIN(5270, 0),
-			/* Data[8].ctlEdges[3].bChannel */ FREQ2FBIN(5510, 0),
-			/* Data[8].ctlEdges[4].bChannel */ FREQ2FBIN(5550, 0),
-			/* Data[8].ctlEdges[5].bChannel */ FREQ2FBIN(5670, 0),
-			/* Data[8].ctlEdges[6].bChannel */ FREQ2FBIN(5755, 0),
-			/* Data[8].ctlEdges[7].bChannel */ FREQ2FBIN(5795, 0)
+			/* Data[8].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5190, 0),
+			/* Data[8].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5230, 0),
+			/* Data[8].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5270, 0),
+			/* Data[8].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5510, 0),
+			/* Data[8].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5550, 0),
+			/* Data[8].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5670, 0),
+			/* Data[8].ctlEdges[6].bChannel */ (u8)FREQ2FBIN(5755, 0),
+			/* Data[8].ctlEdges[7].bChannel */ (u8)FREQ2FBIN(5795, 0)
 		}
 	 },
 	.ctlPowerData_5G = {
@@ -687,7 +687,7 @@ static const struct ar9300_eeprom ar9300_x113 = {
 		 * spurChans[OSPREY_EEPROM_MODAL_SPURS]; spur
 		 * channels in usual fbin coding format
 		 */
-		.spurChans = {FREQ2FBIN(2464, 1), 0, 0, 0, 0},
+		.spurChans = {(u8)FREQ2FBIN(2464, 1), 0, 0, 0, 0},
 
 		/*
 		 * noiseFloorThreshCh[AR9300_MAX_CHAINS]; 3 Check
@@ -721,9 +721,9 @@ static const struct ar9300_eeprom ar9300_x113 = {
 		.tempslopextension = {0, 0, 0, 0, 0, 0, 0, 0}
 	 },
 	.calFreqPier2G = {
-		FREQ2FBIN(2412, 1),
-		FREQ2FBIN(2437, 1),
-		FREQ2FBIN(2472, 1),
+		(u8)FREQ2FBIN(2412, 1),
+		(u8)FREQ2FBIN(2437, 1),
+		(u8)FREQ2FBIN(2472, 1),
 	 },
 	/* ar9300_cal_data_per_freq_op_loop 2g */
 	.calPierData2G = {
@@ -732,23 +732,23 @@ static const struct ar9300_eeprom ar9300_x113 = {
 		{ {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0} },
 	 },
 	.calTarget_freqbin_Cck = {
-		FREQ2FBIN(2412, 1),
-		FREQ2FBIN(2472, 1),
+		(u8)FREQ2FBIN(2412, 1),
+		(u8)FREQ2FBIN(2472, 1),
 	 },
 	.calTarget_freqbin_2G = {
-		FREQ2FBIN(2412, 1),
-		FREQ2FBIN(2437, 1),
-		FREQ2FBIN(2472, 1)
+		(u8)FREQ2FBIN(2412, 1),
+		(u8)FREQ2FBIN(2437, 1),
+		(u8)FREQ2FBIN(2472, 1)
 	 },
 	.calTarget_freqbin_2GHT20 = {
-		FREQ2FBIN(2412, 1),
-		FREQ2FBIN(2437, 1),
-		FREQ2FBIN(2472, 1)
+		(u8)FREQ2FBIN(2412, 1),
+		(u8)FREQ2FBIN(2437, 1),
+		(u8)FREQ2FBIN(2472, 1)
 	 },
 	.calTarget_freqbin_2GHT40 = {
-		FREQ2FBIN(2412, 1),
-		FREQ2FBIN(2437, 1),
-		FREQ2FBIN(2472, 1)
+		(u8)FREQ2FBIN(2412, 1),
+		(u8)FREQ2FBIN(2437, 1),
+		(u8)FREQ2FBIN(2472, 1)
 	 },
 	.calTargetPowerCck = {
 		 /* 1L-5L,5S,11L,11S */
@@ -777,84 +777,84 @@ static const struct ar9300_eeprom ar9300_x113 = {
 	},
 	.ctl_freqbin_2G = {
 		{
-			FREQ2FBIN(2412, 1),
-			FREQ2FBIN(2417, 1),
-			FREQ2FBIN(2457, 1),
-			FREQ2FBIN(2462, 1)
+			(u8)FREQ2FBIN(2412, 1),
+			(u8)FREQ2FBIN(2417, 1),
+			(u8)FREQ2FBIN(2457, 1),
+			(u8)FREQ2FBIN(2462, 1)
 		},
 		{
-			FREQ2FBIN(2412, 1),
-			FREQ2FBIN(2417, 1),
-			FREQ2FBIN(2462, 1),
+			(u8)FREQ2FBIN(2412, 1),
+			(u8)FREQ2FBIN(2417, 1),
+			(u8)FREQ2FBIN(2462, 1),
 			0xFF,
 		},
 
 		{
-			FREQ2FBIN(2412, 1),
-			FREQ2FBIN(2417, 1),
-			FREQ2FBIN(2462, 1),
+			(u8)FREQ2FBIN(2412, 1),
+			(u8)FREQ2FBIN(2417, 1),
+			(u8)FREQ2FBIN(2462, 1),
 			0xFF,
 		},
 		{
-			FREQ2FBIN(2422, 1),
-			FREQ2FBIN(2427, 1),
-			FREQ2FBIN(2447, 1),
-			FREQ2FBIN(2452, 1)
+			(u8)FREQ2FBIN(2422, 1),
+			(u8)FREQ2FBIN(2427, 1),
+			(u8)FREQ2FBIN(2447, 1),
+			(u8)FREQ2FBIN(2452, 1)
 		},
 
 		{
-			/* Data[4].ctlEdges[0].bChannel */ FREQ2FBIN(2412, 1),
-			/* Data[4].ctlEdges[1].bChannel */ FREQ2FBIN(2417, 1),
-			/* Data[4].ctlEdges[2].bChannel */ FREQ2FBIN(2472, 1),
-			/* Data[4].ctlEdges[3].bChannel */ FREQ2FBIN(2484, 1),
+			/* Data[4].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2412, 1),
+			/* Data[4].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2417, 1),
+			/* Data[4].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(2472, 1),
+			/* Data[4].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(2484, 1),
 		},
 
 		{
-			/* Data[5].ctlEdges[0].bChannel */ FREQ2FBIN(2412, 1),
-			/* Data[5].ctlEdges[1].bChannel */ FREQ2FBIN(2417, 1),
-			/* Data[5].ctlEdges[2].bChannel */ FREQ2FBIN(2472, 1),
+			/* Data[5].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2412, 1),
+			/* Data[5].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2417, 1),
+			/* Data[5].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(2472, 1),
 			0,
 		},
 
 		{
-			/* Data[6].ctlEdges[0].bChannel */ FREQ2FBIN(2412, 1),
-			/* Data[6].ctlEdges[1].bChannel */ FREQ2FBIN(2417, 1),
-			FREQ2FBIN(2472, 1),
+			/* Data[6].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2412, 1),
+			/* Data[6].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2417, 1),
+			(u8)FREQ2FBIN(2472, 1),
 			0,
 		},
 
 		{
-			/* Data[7].ctlEdges[0].bChannel */ FREQ2FBIN(2422, 1),
-			/* Data[7].ctlEdges[1].bChannel */ FREQ2FBIN(2427, 1),
-			/* Data[7].ctlEdges[2].bChannel */ FREQ2FBIN(2447, 1),
-			/* Data[7].ctlEdges[3].bChannel */ FREQ2FBIN(2462, 1),
+			/* Data[7].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2422, 1),
+			/* Data[7].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2427, 1),
+			/* Data[7].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(2447, 1),
+			/* Data[7].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(2462, 1),
 		},
 
 		{
-			/* Data[8].ctlEdges[0].bChannel */ FREQ2FBIN(2412, 1),
-			/* Data[8].ctlEdges[1].bChannel */ FREQ2FBIN(2417, 1),
-			/* Data[8].ctlEdges[2].bChannel */ FREQ2FBIN(2472, 1),
+			/* Data[8].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2412, 1),
+			/* Data[8].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2417, 1),
+			/* Data[8].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(2472, 1),
 		},
 
 		{
-			/* Data[9].ctlEdges[0].bChannel */ FREQ2FBIN(2412, 1),
-			/* Data[9].ctlEdges[1].bChannel */ FREQ2FBIN(2417, 1),
-			/* Data[9].ctlEdges[2].bChannel */ FREQ2FBIN(2472, 1),
+			/* Data[9].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2412, 1),
+			/* Data[9].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2417, 1),
+			/* Data[9].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(2472, 1),
 			0
 		},
 
 		{
-			/* Data[10].ctlEdges[0].bChannel */ FREQ2FBIN(2412, 1),
-			/* Data[10].ctlEdges[1].bChannel */ FREQ2FBIN(2417, 1),
-			/* Data[10].ctlEdges[2].bChannel */ FREQ2FBIN(2472, 1),
+			/* Data[10].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2412, 1),
+			/* Data[10].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2417, 1),
+			/* Data[10].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(2472, 1),
 			0
 		},
 
 		{
-			/* Data[11].ctlEdges[0].bChannel */ FREQ2FBIN(2422, 1),
-			/* Data[11].ctlEdges[1].bChannel */ FREQ2FBIN(2427, 1),
-			/* Data[11].ctlEdges[2].bChannel */ FREQ2FBIN(2447, 1),
-			/* Data[11].ctlEdges[3].bChannel */ FREQ2FBIN(2462, 1),
+			/* Data[11].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2422, 1),
+			/* Data[11].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2427, 1),
+			/* Data[11].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(2447, 1),
+			/* Data[11].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(2462, 1),
 		}
 	 },
 	.ctlPowerData_2G = {
@@ -894,7 +894,7 @@ static const struct ar9300_eeprom ar9300_x113 = {
 		.tempSlope = 68,
 		.voltSlope = 0,
 		/* spurChans spur channels in usual fbin coding format */
-		.spurChans = {FREQ2FBIN(5500, 0), 0, 0, 0, 0},
+		.spurChans = {(u8)FREQ2FBIN(5500, 0), 0, 0, 0, 0},
 		/* noiseFloorThreshCh Check if the register is per chain */
 		.noiseFloorThreshCh = {-1, 0, 0},
 		.reserved = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
@@ -927,14 +927,14 @@ static const struct ar9300_eeprom ar9300_x113 = {
 		.xatten1MarginHigh = {0, 0, 0}
 	 },
 	.calFreqPier5G = {
-		FREQ2FBIN(5180, 0),
-		FREQ2FBIN(5240, 0),
-		FREQ2FBIN(5320, 0),
-		FREQ2FBIN(5400, 0),
-		FREQ2FBIN(5500, 0),
-		FREQ2FBIN(5600, 0),
-		FREQ2FBIN(5745, 0),
-		FREQ2FBIN(5785, 0)
+		(u8)FREQ2FBIN(5180, 0),
+		(u8)FREQ2FBIN(5240, 0),
+		(u8)FREQ2FBIN(5320, 0),
+		(u8)FREQ2FBIN(5400, 0),
+		(u8)FREQ2FBIN(5500, 0),
+		(u8)FREQ2FBIN(5600, 0),
+		(u8)FREQ2FBIN(5745, 0),
+		(u8)FREQ2FBIN(5785, 0)
 	},
 	.calPierData5G = {
 			{
@@ -970,34 +970,34 @@ static const struct ar9300_eeprom ar9300_x113 = {
 
 	},
 	.calTarget_freqbin_5G = {
-		FREQ2FBIN(5180, 0),
-		FREQ2FBIN(5220, 0),
-		FREQ2FBIN(5320, 0),
-		FREQ2FBIN(5400, 0),
-		FREQ2FBIN(5500, 0),
-		FREQ2FBIN(5600, 0),
-		FREQ2FBIN(5745, 0),
-		FREQ2FBIN(5785, 0)
+		(u8)FREQ2FBIN(5180, 0),
+		(u8)FREQ2FBIN(5220, 0),
+		(u8)FREQ2FBIN(5320, 0),
+		(u8)FREQ2FBIN(5400, 0),
+		(u8)FREQ2FBIN(5500, 0),
+		(u8)FREQ2FBIN(5600, 0),
+		(u8)FREQ2FBIN(5745, 0),
+		(u8)FREQ2FBIN(5785, 0)
 	},
 	.calTarget_freqbin_5GHT20 = {
-		FREQ2FBIN(5180, 0),
-		FREQ2FBIN(5240, 0),
-		FREQ2FBIN(5320, 0),
-		FREQ2FBIN(5400, 0),
-		FREQ2FBIN(5500, 0),
-		FREQ2FBIN(5700, 0),
-		FREQ2FBIN(5745, 0),
-		FREQ2FBIN(5825, 0)
+		(u8)FREQ2FBIN(5180, 0),
+		(u8)FREQ2FBIN(5240, 0),
+		(u8)FREQ2FBIN(5320, 0),
+		(u8)FREQ2FBIN(5400, 0),
+		(u8)FREQ2FBIN(5500, 0),
+		(u8)FREQ2FBIN(5700, 0),
+		(u8)FREQ2FBIN(5745, 0),
+		(u8)FREQ2FBIN(5825, 0)
 	},
 	.calTarget_freqbin_5GHT40 = {
-		FREQ2FBIN(5190, 0),
-		FREQ2FBIN(5230, 0),
-		FREQ2FBIN(5320, 0),
-		FREQ2FBIN(5410, 0),
-		FREQ2FBIN(5510, 0),
-		FREQ2FBIN(5670, 0),
-		FREQ2FBIN(5755, 0),
-		FREQ2FBIN(5825, 0)
+		(u8)FREQ2FBIN(5190, 0),
+		(u8)FREQ2FBIN(5230, 0),
+		(u8)FREQ2FBIN(5320, 0),
+		(u8)FREQ2FBIN(5410, 0),
+		(u8)FREQ2FBIN(5510, 0),
+		(u8)FREQ2FBIN(5670, 0),
+		(u8)FREQ2FBIN(5755, 0),
+		(u8)FREQ2FBIN(5825, 0)
 	 },
 	.calTargetPower5G = {
 		/* 6-24,36,48,54 */
@@ -1044,53 +1044,53 @@ static const struct ar9300_eeprom ar9300_x113 = {
 	},
 	.ctl_freqbin_5G =  {
 		{
-			/* Data[0].ctlEdges[0].bChannel */ FREQ2FBIN(5180, 0),
-			/* Data[0].ctlEdges[1].bChannel */ FREQ2FBIN(5260, 0),
-			/* Data[0].ctlEdges[2].bChannel */ FREQ2FBIN(5280, 0),
-			/* Data[0].ctlEdges[3].bChannel */ FREQ2FBIN(5500, 0),
-			/* Data[0].ctlEdges[4].bChannel */ FREQ2FBIN(5600, 0),
-			/* Data[0].ctlEdges[5].bChannel */ FREQ2FBIN(5700, 0),
-			/* Data[0].ctlEdges[6].bChannel */ FREQ2FBIN(5745, 0),
-			/* Data[0].ctlEdges[7].bChannel */ FREQ2FBIN(5825, 0)
+			/* Data[0].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5180, 0),
+			/* Data[0].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5260, 0),
+			/* Data[0].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5280, 0),
+			/* Data[0].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5500, 0),
+			/* Data[0].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5600, 0),
+			/* Data[0].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5700, 0),
+			/* Data[0].ctlEdges[6].bChannel */ (u8)FREQ2FBIN(5745, 0),
+			/* Data[0].ctlEdges[7].bChannel */ (u8)FREQ2FBIN(5825, 0)
 		},
 		{
-			/* Data[1].ctlEdges[0].bChannel */ FREQ2FBIN(5180, 0),
-			/* Data[1].ctlEdges[1].bChannel */ FREQ2FBIN(5260, 0),
-			/* Data[1].ctlEdges[2].bChannel */ FREQ2FBIN(5280, 0),
-			/* Data[1].ctlEdges[3].bChannel */ FREQ2FBIN(5500, 0),
-			/* Data[1].ctlEdges[4].bChannel */ FREQ2FBIN(5520, 0),
-			/* Data[1].ctlEdges[5].bChannel */ FREQ2FBIN(5700, 0),
-			/* Data[1].ctlEdges[6].bChannel */ FREQ2FBIN(5745, 0),
-			/* Data[1].ctlEdges[7].bChannel */ FREQ2FBIN(5825, 0)
-		},
-
-		{
-			/* Data[2].ctlEdges[0].bChannel */ FREQ2FBIN(5190, 0),
-			/* Data[2].ctlEdges[1].bChannel */ FREQ2FBIN(5230, 0),
-			/* Data[2].ctlEdges[2].bChannel */ FREQ2FBIN(5270, 0),
-			/* Data[2].ctlEdges[3].bChannel */ FREQ2FBIN(5310, 0),
-			/* Data[2].ctlEdges[4].bChannel */ FREQ2FBIN(5510, 0),
-			/* Data[2].ctlEdges[5].bChannel */ FREQ2FBIN(5550, 0),
-			/* Data[2].ctlEdges[6].bChannel */ FREQ2FBIN(5670, 0),
-			/* Data[2].ctlEdges[7].bChannel */ FREQ2FBIN(5755, 0)
+			/* Data[1].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5180, 0),
+			/* Data[1].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5260, 0),
+			/* Data[1].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5280, 0),
+			/* Data[1].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5500, 0),
+			/* Data[1].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5520, 0),
+			/* Data[1].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5700, 0),
+			/* Data[1].ctlEdges[6].bChannel */ (u8)FREQ2FBIN(5745, 0),
+			/* Data[1].ctlEdges[7].bChannel */ (u8)FREQ2FBIN(5825, 0)
 		},
 
 		{
-			/* Data[3].ctlEdges[0].bChannel */ FREQ2FBIN(5180, 0),
-			/* Data[3].ctlEdges[1].bChannel */ FREQ2FBIN(5200, 0),
-			/* Data[3].ctlEdges[2].bChannel */ FREQ2FBIN(5260, 0),
-			/* Data[3].ctlEdges[3].bChannel */ FREQ2FBIN(5320, 0),
-			/* Data[3].ctlEdges[4].bChannel */ FREQ2FBIN(5500, 0),
-			/* Data[3].ctlEdges[5].bChannel */ FREQ2FBIN(5700, 0),
+			/* Data[2].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5190, 0),
+			/* Data[2].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5230, 0),
+			/* Data[2].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5270, 0),
+			/* Data[2].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5310, 0),
+			/* Data[2].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5510, 0),
+			/* Data[2].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5550, 0),
+			/* Data[2].ctlEdges[6].bChannel */ (u8)FREQ2FBIN(5670, 0),
+			/* Data[2].ctlEdges[7].bChannel */ (u8)FREQ2FBIN(5755, 0)
+		},
+
+		{
+			/* Data[3].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5180, 0),
+			/* Data[3].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5200, 0),
+			/* Data[3].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5260, 0),
+			/* Data[3].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5320, 0),
+			/* Data[3].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5500, 0),
+			/* Data[3].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5700, 0),
 			/* Data[3].ctlEdges[6].bChannel */ 0xFF,
 			/* Data[3].ctlEdges[7].bChannel */ 0xFF,
 		},
 
 		{
-			/* Data[4].ctlEdges[0].bChannel */ FREQ2FBIN(5180, 0),
-			/* Data[4].ctlEdges[1].bChannel */ FREQ2FBIN(5260, 0),
-			/* Data[4].ctlEdges[2].bChannel */ FREQ2FBIN(5500, 0),
-			/* Data[4].ctlEdges[3].bChannel */ FREQ2FBIN(5700, 0),
+			/* Data[4].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5180, 0),
+			/* Data[4].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5260, 0),
+			/* Data[4].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5500, 0),
+			/* Data[4].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5700, 0),
 			/* Data[4].ctlEdges[4].bChannel */ 0xFF,
 			/* Data[4].ctlEdges[5].bChannel */ 0xFF,
 			/* Data[4].ctlEdges[6].bChannel */ 0xFF,
@@ -1098,47 +1098,47 @@ static const struct ar9300_eeprom ar9300_x113 = {
 		},
 
 		{
-			/* Data[5].ctlEdges[0].bChannel */ FREQ2FBIN(5190, 0),
-			/* Data[5].ctlEdges[1].bChannel */ FREQ2FBIN(5270, 0),
-			/* Data[5].ctlEdges[2].bChannel */ FREQ2FBIN(5310, 0),
-			/* Data[5].ctlEdges[3].bChannel */ FREQ2FBIN(5510, 0),
-			/* Data[5].ctlEdges[4].bChannel */ FREQ2FBIN(5590, 0),
-			/* Data[5].ctlEdges[5].bChannel */ FREQ2FBIN(5670, 0),
+			/* Data[5].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5190, 0),
+			/* Data[5].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5270, 0),
+			/* Data[5].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5310, 0),
+			/* Data[5].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5510, 0),
+			/* Data[5].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5590, 0),
+			/* Data[5].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5670, 0),
 			/* Data[5].ctlEdges[6].bChannel */ 0xFF,
 			/* Data[5].ctlEdges[7].bChannel */ 0xFF
 		},
 
 		{
-			/* Data[6].ctlEdges[0].bChannel */ FREQ2FBIN(5180, 0),
-			/* Data[6].ctlEdges[1].bChannel */ FREQ2FBIN(5200, 0),
-			/* Data[6].ctlEdges[2].bChannel */ FREQ2FBIN(5220, 0),
-			/* Data[6].ctlEdges[3].bChannel */ FREQ2FBIN(5260, 0),
-			/* Data[6].ctlEdges[4].bChannel */ FREQ2FBIN(5500, 0),
-			/* Data[6].ctlEdges[5].bChannel */ FREQ2FBIN(5600, 0),
-			/* Data[6].ctlEdges[6].bChannel */ FREQ2FBIN(5700, 0),
-			/* Data[6].ctlEdges[7].bChannel */ FREQ2FBIN(5745, 0)
+			/* Data[6].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5180, 0),
+			/* Data[6].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5200, 0),
+			/* Data[6].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5220, 0),
+			/* Data[6].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5260, 0),
+			/* Data[6].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5500, 0),
+			/* Data[6].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5600, 0),
+			/* Data[6].ctlEdges[6].bChannel */ (u8)FREQ2FBIN(5700, 0),
+			/* Data[6].ctlEdges[7].bChannel */ (u8)FREQ2FBIN(5745, 0)
 		},
 
 		{
-			/* Data[7].ctlEdges[0].bChannel */ FREQ2FBIN(5180, 0),
-			/* Data[7].ctlEdges[1].bChannel */ FREQ2FBIN(5260, 0),
-			/* Data[7].ctlEdges[2].bChannel */ FREQ2FBIN(5320, 0),
-			/* Data[7].ctlEdges[3].bChannel */ FREQ2FBIN(5500, 0),
-			/* Data[7].ctlEdges[4].bChannel */ FREQ2FBIN(5560, 0),
-			/* Data[7].ctlEdges[5].bChannel */ FREQ2FBIN(5700, 0),
-			/* Data[7].ctlEdges[6].bChannel */ FREQ2FBIN(5745, 0),
-			/* Data[7].ctlEdges[7].bChannel */ FREQ2FBIN(5825, 0)
+			/* Data[7].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5180, 0),
+			/* Data[7].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5260, 0),
+			/* Data[7].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5320, 0),
+			/* Data[7].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5500, 0),
+			/* Data[7].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5560, 0),
+			/* Data[7].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5700, 0),
+			/* Data[7].ctlEdges[6].bChannel */ (u8)FREQ2FBIN(5745, 0),
+			/* Data[7].ctlEdges[7].bChannel */ (u8)FREQ2FBIN(5825, 0)
 		},
 
 		{
-			/* Data[8].ctlEdges[0].bChannel */ FREQ2FBIN(5190, 0),
-			/* Data[8].ctlEdges[1].bChannel */ FREQ2FBIN(5230, 0),
-			/* Data[8].ctlEdges[2].bChannel */ FREQ2FBIN(5270, 0),
-			/* Data[8].ctlEdges[3].bChannel */ FREQ2FBIN(5510, 0),
-			/* Data[8].ctlEdges[4].bChannel */ FREQ2FBIN(5550, 0),
-			/* Data[8].ctlEdges[5].bChannel */ FREQ2FBIN(5670, 0),
-			/* Data[8].ctlEdges[6].bChannel */ FREQ2FBIN(5755, 0),
-			/* Data[8].ctlEdges[7].bChannel */ FREQ2FBIN(5795, 0)
+			/* Data[8].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5190, 0),
+			/* Data[8].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5230, 0),
+			/* Data[8].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5270, 0),
+			/* Data[8].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5510, 0),
+			/* Data[8].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5550, 0),
+			/* Data[8].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5670, 0),
+			/* Data[8].ctlEdges[6].bChannel */ (u8)FREQ2FBIN(5755, 0),
+			/* Data[8].ctlEdges[7].bChannel */ (u8)FREQ2FBIN(5795, 0)
 		}
 	 },
 	.ctlPowerData_5G = {
@@ -1266,7 +1266,7 @@ static const struct ar9300_eeprom ar9300_h112 = {
 		 * spurChans[OSPREY_EEPROM_MODAL_SPURS]; spur
 		 * channels in usual fbin coding format
 		 */
-		.spurChans = {FREQ2FBIN(2464, 1), 0, 0, 0, 0},
+		.spurChans = {(u8)FREQ2FBIN(2464, 1), 0, 0, 0, 0},
 
 		/*
 		 * noiseFloorThreshCh[AR9300_MAX_CHAINS]; 3 Check
@@ -1300,9 +1300,9 @@ static const struct ar9300_eeprom ar9300_h112 = {
 		.tempslopextension = {0, 0, 0, 0, 0, 0, 0, 0}
 	},
 	.calFreqPier2G = {
-		FREQ2FBIN(2412, 1),
-		FREQ2FBIN(2437, 1),
-		FREQ2FBIN(2462, 1),
+		(u8)FREQ2FBIN(2412, 1),
+		(u8)FREQ2FBIN(2437, 1),
+		(u8)FREQ2FBIN(2462, 1),
 	},
 	/* ar9300_cal_data_per_freq_op_loop 2g */
 	.calPierData2G = {
@@ -1311,23 +1311,23 @@ static const struct ar9300_eeprom ar9300_h112 = {
 		{ {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0} },
 	},
 	.calTarget_freqbin_Cck = {
-		FREQ2FBIN(2412, 1),
-		FREQ2FBIN(2472, 1),
+		(u8)FREQ2FBIN(2412, 1),
+		(u8)FREQ2FBIN(2472, 1),
 	},
 	.calTarget_freqbin_2G = {
-		FREQ2FBIN(2412, 1),
-		FREQ2FBIN(2437, 1),
-		FREQ2FBIN(2472, 1)
+		(u8)FREQ2FBIN(2412, 1),
+		(u8)FREQ2FBIN(2437, 1),
+		(u8)FREQ2FBIN(2472, 1)
 	},
 	.calTarget_freqbin_2GHT20 = {
-		FREQ2FBIN(2412, 1),
-		FREQ2FBIN(2437, 1),
-		FREQ2FBIN(2472, 1)
+		(u8)FREQ2FBIN(2412, 1),
+		(u8)FREQ2FBIN(2437, 1),
+		(u8)FREQ2FBIN(2472, 1)
 	},
 	.calTarget_freqbin_2GHT40 = {
-		FREQ2FBIN(2412, 1),
-		FREQ2FBIN(2437, 1),
-		FREQ2FBIN(2472, 1)
+		(u8)FREQ2FBIN(2412, 1),
+		(u8)FREQ2FBIN(2437, 1),
+		(u8)FREQ2FBIN(2472, 1)
 	},
 	.calTargetPowerCck = {
 		/* 1L-5L,5S,11L,11S */
@@ -1356,84 +1356,84 @@ static const struct ar9300_eeprom ar9300_h112 = {
 	},
 	.ctl_freqbin_2G = {
 		{
-			FREQ2FBIN(2412, 1),
-			FREQ2FBIN(2417, 1),
-			FREQ2FBIN(2457, 1),
-			FREQ2FBIN(2462, 1)
+			(u8)FREQ2FBIN(2412, 1),
+			(u8)FREQ2FBIN(2417, 1),
+			(u8)FREQ2FBIN(2457, 1),
+			(u8)FREQ2FBIN(2462, 1)
 		},
 		{
-			FREQ2FBIN(2412, 1),
-			FREQ2FBIN(2417, 1),
-			FREQ2FBIN(2462, 1),
+			(u8)FREQ2FBIN(2412, 1),
+			(u8)FREQ2FBIN(2417, 1),
+			(u8)FREQ2FBIN(2462, 1),
 			0xFF,
 		},
 
 		{
-			FREQ2FBIN(2412, 1),
-			FREQ2FBIN(2417, 1),
-			FREQ2FBIN(2462, 1),
+			(u8)FREQ2FBIN(2412, 1),
+			(u8)FREQ2FBIN(2417, 1),
+			(u8)FREQ2FBIN(2462, 1),
 			0xFF,
 		},
 		{
-			FREQ2FBIN(2422, 1),
-			FREQ2FBIN(2427, 1),
-			FREQ2FBIN(2447, 1),
-			FREQ2FBIN(2452, 1)
+			(u8)FREQ2FBIN(2422, 1),
+			(u8)FREQ2FBIN(2427, 1),
+			(u8)FREQ2FBIN(2447, 1),
+			(u8)FREQ2FBIN(2452, 1)
 		},
 
 		{
-			/* Data[4].ctlEdges[0].bChannel */ FREQ2FBIN(2412, 1),
-			/* Data[4].ctlEdges[1].bChannel */ FREQ2FBIN(2417, 1),
-			/* Data[4].ctlEdges[2].bChannel */ FREQ2FBIN(2472, 1),
-			/* Data[4].ctlEdges[3].bChannel */ FREQ2FBIN(2484, 1),
+			/* Data[4].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2412, 1),
+			/* Data[4].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2417, 1),
+			/* Data[4].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(2472, 1),
+			/* Data[4].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(2484, 1),
 		},
 
 		{
-			/* Data[5].ctlEdges[0].bChannel */ FREQ2FBIN(2412, 1),
-			/* Data[5].ctlEdges[1].bChannel */ FREQ2FBIN(2417, 1),
-			/* Data[5].ctlEdges[2].bChannel */ FREQ2FBIN(2472, 1),
+			/* Data[5].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2412, 1),
+			/* Data[5].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2417, 1),
+			/* Data[5].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(2472, 1),
 			0,
 		},
 
 		{
-			/* Data[6].ctlEdges[0].bChannel */ FREQ2FBIN(2412, 1),
-			/* Data[6].ctlEdges[1].bChannel */ FREQ2FBIN(2417, 1),
-			FREQ2FBIN(2472, 1),
+			/* Data[6].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2412, 1),
+			/* Data[6].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2417, 1),
+			(u8)FREQ2FBIN(2472, 1),
 			0,
 		},
 
 		{
-			/* Data[7].ctlEdges[0].bChannel */ FREQ2FBIN(2422, 1),
-			/* Data[7].ctlEdges[1].bChannel */ FREQ2FBIN(2427, 1),
-			/* Data[7].ctlEdges[2].bChannel */ FREQ2FBIN(2447, 1),
-			/* Data[7].ctlEdges[3].bChannel */ FREQ2FBIN(2462, 1),
+			/* Data[7].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2422, 1),
+			/* Data[7].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2427, 1),
+			/* Data[7].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(2447, 1),
+			/* Data[7].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(2462, 1),
 		},
 
 		{
-			/* Data[8].ctlEdges[0].bChannel */ FREQ2FBIN(2412, 1),
-			/* Data[8].ctlEdges[1].bChannel */ FREQ2FBIN(2417, 1),
-			/* Data[8].ctlEdges[2].bChannel */ FREQ2FBIN(2472, 1),
+			/* Data[8].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2412, 1),
+			/* Data[8].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2417, 1),
+			/* Data[8].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(2472, 1),
 		},
 
 		{
-			/* Data[9].ctlEdges[0].bChannel */ FREQ2FBIN(2412, 1),
-			/* Data[9].ctlEdges[1].bChannel */ FREQ2FBIN(2417, 1),
-			/* Data[9].ctlEdges[2].bChannel */ FREQ2FBIN(2472, 1),
+			/* Data[9].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2412, 1),
+			/* Data[9].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2417, 1),
+			/* Data[9].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(2472, 1),
 			0
 		},
 
 		{
-			/* Data[10].ctlEdges[0].bChannel */ FREQ2FBIN(2412, 1),
-			/* Data[10].ctlEdges[1].bChannel */ FREQ2FBIN(2417, 1),
-			/* Data[10].ctlEdges[2].bChannel */ FREQ2FBIN(2472, 1),
+			/* Data[10].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2412, 1),
+			/* Data[10].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2417, 1),
+			/* Data[10].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(2472, 1),
 			0
 		},
 
 		{
-			/* Data[11].ctlEdges[0].bChannel */ FREQ2FBIN(2422, 1),
-			/* Data[11].ctlEdges[1].bChannel */ FREQ2FBIN(2427, 1),
-			/* Data[11].ctlEdges[2].bChannel */ FREQ2FBIN(2447, 1),
-			/* Data[11].ctlEdges[3].bChannel */ FREQ2FBIN(2462, 1),
+			/* Data[11].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2422, 1),
+			/* Data[11].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2427, 1),
+			/* Data[11].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(2447, 1),
+			/* Data[11].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(2462, 1),
 		}
 	},
 	.ctlPowerData_2G = {
@@ -1506,14 +1506,14 @@ static const struct ar9300_eeprom ar9300_h112 = {
 		.xatten1MarginHigh = {0, 0, 0}
 	},
 	.calFreqPier5G = {
-		FREQ2FBIN(5180, 0),
-		FREQ2FBIN(5220, 0),
-		FREQ2FBIN(5320, 0),
-		FREQ2FBIN(5400, 0),
-		FREQ2FBIN(5500, 0),
-		FREQ2FBIN(5600, 0),
-		FREQ2FBIN(5700, 0),
-		FREQ2FBIN(5785, 0)
+		(u8)FREQ2FBIN(5180, 0),
+		(u8)FREQ2FBIN(5220, 0),
+		(u8)FREQ2FBIN(5320, 0),
+		(u8)FREQ2FBIN(5400, 0),
+		(u8)FREQ2FBIN(5500, 0),
+		(u8)FREQ2FBIN(5600, 0),
+		(u8)FREQ2FBIN(5700, 0),
+		(u8)FREQ2FBIN(5785, 0)
 	},
 	.calPierData5G = {
 		{
@@ -1549,34 +1549,34 @@ static const struct ar9300_eeprom ar9300_h112 = {
 
 	},
 	.calTarget_freqbin_5G = {
-		FREQ2FBIN(5180, 0),
-		FREQ2FBIN(5240, 0),
-		FREQ2FBIN(5320, 0),
-		FREQ2FBIN(5400, 0),
-		FREQ2FBIN(5500, 0),
-		FREQ2FBIN(5600, 0),
-		FREQ2FBIN(5700, 0),
-		FREQ2FBIN(5825, 0)
+		(u8)FREQ2FBIN(5180, 0),
+		(u8)FREQ2FBIN(5240, 0),
+		(u8)FREQ2FBIN(5320, 0),
+		(u8)FREQ2FBIN(5400, 0),
+		(u8)FREQ2FBIN(5500, 0),
+		(u8)FREQ2FBIN(5600, 0),
+		(u8)FREQ2FBIN(5700, 0),
+		(u8)FREQ2FBIN(5825, 0)
 	},
 	.calTarget_freqbin_5GHT20 = {
-		FREQ2FBIN(5180, 0),
-		FREQ2FBIN(5240, 0),
-		FREQ2FBIN(5320, 0),
-		FREQ2FBIN(5400, 0),
-		FREQ2FBIN(5500, 0),
-		FREQ2FBIN(5700, 0),
-		FREQ2FBIN(5745, 0),
-		FREQ2FBIN(5825, 0)
+		(u8)FREQ2FBIN(5180, 0),
+		(u8)FREQ2FBIN(5240, 0),
+		(u8)FREQ2FBIN(5320, 0),
+		(u8)FREQ2FBIN(5400, 0),
+		(u8)FREQ2FBIN(5500, 0),
+		(u8)FREQ2FBIN(5700, 0),
+		(u8)FREQ2FBIN(5745, 0),
+		(u8)FREQ2FBIN(5825, 0)
 	},
 	.calTarget_freqbin_5GHT40 = {
-		FREQ2FBIN(5180, 0),
-		FREQ2FBIN(5240, 0),
-		FREQ2FBIN(5320, 0),
-		FREQ2FBIN(5400, 0),
-		FREQ2FBIN(5500, 0),
-		FREQ2FBIN(5700, 0),
-		FREQ2FBIN(5745, 0),
-		FREQ2FBIN(5825, 0)
+		(u8)FREQ2FBIN(5180, 0),
+		(u8)FREQ2FBIN(5240, 0),
+		(u8)FREQ2FBIN(5320, 0),
+		(u8)FREQ2FBIN(5400, 0),
+		(u8)FREQ2FBIN(5500, 0),
+		(u8)FREQ2FBIN(5700, 0),
+		(u8)FREQ2FBIN(5745, 0),
+		(u8)FREQ2FBIN(5825, 0)
 	},
 	.calTargetPower5G = {
 		/* 6-24,36,48,54 */
@@ -1623,53 +1623,53 @@ static const struct ar9300_eeprom ar9300_h112 = {
 	},
 	.ctl_freqbin_5G =  {
 		{
-			/* Data[0].ctlEdges[0].bChannel */ FREQ2FBIN(5180, 0),
-			/* Data[0].ctlEdges[1].bChannel */ FREQ2FBIN(5260, 0),
-			/* Data[0].ctlEdges[2].bChannel */ FREQ2FBIN(5280, 0),
-			/* Data[0].ctlEdges[3].bChannel */ FREQ2FBIN(5500, 0),
-			/* Data[0].ctlEdges[4].bChannel */ FREQ2FBIN(5600, 0),
-			/* Data[0].ctlEdges[5].bChannel */ FREQ2FBIN(5700, 0),
-			/* Data[0].ctlEdges[6].bChannel */ FREQ2FBIN(5745, 0),
-			/* Data[0].ctlEdges[7].bChannel */ FREQ2FBIN(5825, 0)
+			/* Data[0].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5180, 0),
+			/* Data[0].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5260, 0),
+			/* Data[0].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5280, 0),
+			/* Data[0].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5500, 0),
+			/* Data[0].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5600, 0),
+			/* Data[0].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5700, 0),
+			/* Data[0].ctlEdges[6].bChannel */ (u8)FREQ2FBIN(5745, 0),
+			/* Data[0].ctlEdges[7].bChannel */ (u8)FREQ2FBIN(5825, 0)
 		},
 		{
-			/* Data[1].ctlEdges[0].bChannel */ FREQ2FBIN(5180, 0),
-			/* Data[1].ctlEdges[1].bChannel */ FREQ2FBIN(5260, 0),
-			/* Data[1].ctlEdges[2].bChannel */ FREQ2FBIN(5280, 0),
-			/* Data[1].ctlEdges[3].bChannel */ FREQ2FBIN(5500, 0),
-			/* Data[1].ctlEdges[4].bChannel */ FREQ2FBIN(5520, 0),
-			/* Data[1].ctlEdges[5].bChannel */ FREQ2FBIN(5700, 0),
-			/* Data[1].ctlEdges[6].bChannel */ FREQ2FBIN(5745, 0),
-			/* Data[1].ctlEdges[7].bChannel */ FREQ2FBIN(5825, 0)
-		},
-
-		{
-			/* Data[2].ctlEdges[0].bChannel */ FREQ2FBIN(5190, 0),
-			/* Data[2].ctlEdges[1].bChannel */ FREQ2FBIN(5230, 0),
-			/* Data[2].ctlEdges[2].bChannel */ FREQ2FBIN(5270, 0),
-			/* Data[2].ctlEdges[3].bChannel */ FREQ2FBIN(5310, 0),
-			/* Data[2].ctlEdges[4].bChannel */ FREQ2FBIN(5510, 0),
-			/* Data[2].ctlEdges[5].bChannel */ FREQ2FBIN(5550, 0),
-			/* Data[2].ctlEdges[6].bChannel */ FREQ2FBIN(5670, 0),
-			/* Data[2].ctlEdges[7].bChannel */ FREQ2FBIN(5755, 0)
+			/* Data[1].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5180, 0),
+			/* Data[1].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5260, 0),
+			/* Data[1].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5280, 0),
+			/* Data[1].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5500, 0),
+			/* Data[1].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5520, 0),
+			/* Data[1].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5700, 0),
+			/* Data[1].ctlEdges[6].bChannel */ (u8)FREQ2FBIN(5745, 0),
+			/* Data[1].ctlEdges[7].bChannel */ (u8)FREQ2FBIN(5825, 0)
 		},
 
 		{
-			/* Data[3].ctlEdges[0].bChannel */ FREQ2FBIN(5180, 0),
-			/* Data[3].ctlEdges[1].bChannel */ FREQ2FBIN(5200, 0),
-			/* Data[3].ctlEdges[2].bChannel */ FREQ2FBIN(5260, 0),
-			/* Data[3].ctlEdges[3].bChannel */ FREQ2FBIN(5320, 0),
-			/* Data[3].ctlEdges[4].bChannel */ FREQ2FBIN(5500, 0),
-			/* Data[3].ctlEdges[5].bChannel */ FREQ2FBIN(5700, 0),
+			/* Data[2].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5190, 0),
+			/* Data[2].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5230, 0),
+			/* Data[2].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5270, 0),
+			/* Data[2].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5310, 0),
+			/* Data[2].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5510, 0),
+			/* Data[2].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5550, 0),
+			/* Data[2].ctlEdges[6].bChannel */ (u8)FREQ2FBIN(5670, 0),
+			/* Data[2].ctlEdges[7].bChannel */ (u8)FREQ2FBIN(5755, 0)
+		},
+
+		{
+			/* Data[3].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5180, 0),
+			/* Data[3].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5200, 0),
+			/* Data[3].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5260, 0),
+			/* Data[3].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5320, 0),
+			/* Data[3].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5500, 0),
+			/* Data[3].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5700, 0),
 			/* Data[3].ctlEdges[6].bChannel */ 0xFF,
 			/* Data[3].ctlEdges[7].bChannel */ 0xFF,
 		},
 
 		{
-			/* Data[4].ctlEdges[0].bChannel */ FREQ2FBIN(5180, 0),
-			/* Data[4].ctlEdges[1].bChannel */ FREQ2FBIN(5260, 0),
-			/* Data[4].ctlEdges[2].bChannel */ FREQ2FBIN(5500, 0),
-			/* Data[4].ctlEdges[3].bChannel */ FREQ2FBIN(5700, 0),
+			/* Data[4].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5180, 0),
+			/* Data[4].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5260, 0),
+			/* Data[4].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5500, 0),
+			/* Data[4].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5700, 0),
 			/* Data[4].ctlEdges[4].bChannel */ 0xFF,
 			/* Data[4].ctlEdges[5].bChannel */ 0xFF,
 			/* Data[4].ctlEdges[6].bChannel */ 0xFF,
@@ -1677,47 +1677,47 @@ static const struct ar9300_eeprom ar9300_h112 = {
 		},
 
 		{
-			/* Data[5].ctlEdges[0].bChannel */ FREQ2FBIN(5190, 0),
-			/* Data[5].ctlEdges[1].bChannel */ FREQ2FBIN(5270, 0),
-			/* Data[5].ctlEdges[2].bChannel */ FREQ2FBIN(5310, 0),
-			/* Data[5].ctlEdges[3].bChannel */ FREQ2FBIN(5510, 0),
-			/* Data[5].ctlEdges[4].bChannel */ FREQ2FBIN(5590, 0),
-			/* Data[5].ctlEdges[5].bChannel */ FREQ2FBIN(5670, 0),
+			/* Data[5].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5190, 0),
+			/* Data[5].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5270, 0),
+			/* Data[5].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5310, 0),
+			/* Data[5].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5510, 0),
+			/* Data[5].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5590, 0),
+			/* Data[5].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5670, 0),
 			/* Data[5].ctlEdges[6].bChannel */ 0xFF,
 			/* Data[5].ctlEdges[7].bChannel */ 0xFF
 		},
 
 		{
-			/* Data[6].ctlEdges[0].bChannel */ FREQ2FBIN(5180, 0),
-			/* Data[6].ctlEdges[1].bChannel */ FREQ2FBIN(5200, 0),
-			/* Data[6].ctlEdges[2].bChannel */ FREQ2FBIN(5220, 0),
-			/* Data[6].ctlEdges[3].bChannel */ FREQ2FBIN(5260, 0),
-			/* Data[6].ctlEdges[4].bChannel */ FREQ2FBIN(5500, 0),
-			/* Data[6].ctlEdges[5].bChannel */ FREQ2FBIN(5600, 0),
-			/* Data[6].ctlEdges[6].bChannel */ FREQ2FBIN(5700, 0),
-			/* Data[6].ctlEdges[7].bChannel */ FREQ2FBIN(5745, 0)
+			/* Data[6].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5180, 0),
+			/* Data[6].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5200, 0),
+			/* Data[6].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5220, 0),
+			/* Data[6].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5260, 0),
+			/* Data[6].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5500, 0),
+			/* Data[6].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5600, 0),
+			/* Data[6].ctlEdges[6].bChannel */ (u8)FREQ2FBIN(5700, 0),
+			/* Data[6].ctlEdges[7].bChannel */ (u8)FREQ2FBIN(5745, 0)
 		},
 
 		{
-			/* Data[7].ctlEdges[0].bChannel */ FREQ2FBIN(5180, 0),
-			/* Data[7].ctlEdges[1].bChannel */ FREQ2FBIN(5260, 0),
-			/* Data[7].ctlEdges[2].bChannel */ FREQ2FBIN(5320, 0),
-			/* Data[7].ctlEdges[3].bChannel */ FREQ2FBIN(5500, 0),
-			/* Data[7].ctlEdges[4].bChannel */ FREQ2FBIN(5560, 0),
-			/* Data[7].ctlEdges[5].bChannel */ FREQ2FBIN(5700, 0),
-			/* Data[7].ctlEdges[6].bChannel */ FREQ2FBIN(5745, 0),
-			/* Data[7].ctlEdges[7].bChannel */ FREQ2FBIN(5825, 0)
+			/* Data[7].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5180, 0),
+			/* Data[7].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5260, 0),
+			/* Data[7].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5320, 0),
+			/* Data[7].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5500, 0),
+			/* Data[7].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5560, 0),
+			/* Data[7].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5700, 0),
+			/* Data[7].ctlEdges[6].bChannel */ (u8)FREQ2FBIN(5745, 0),
+			/* Data[7].ctlEdges[7].bChannel */ (u8)FREQ2FBIN(5825, 0)
 		},
 
 		{
-			/* Data[8].ctlEdges[0].bChannel */ FREQ2FBIN(5190, 0),
-			/* Data[8].ctlEdges[1].bChannel */ FREQ2FBIN(5230, 0),
-			/* Data[8].ctlEdges[2].bChannel */ FREQ2FBIN(5270, 0),
-			/* Data[8].ctlEdges[3].bChannel */ FREQ2FBIN(5510, 0),
-			/* Data[8].ctlEdges[4].bChannel */ FREQ2FBIN(5550, 0),
-			/* Data[8].ctlEdges[5].bChannel */ FREQ2FBIN(5670, 0),
-			/* Data[8].ctlEdges[6].bChannel */ FREQ2FBIN(5755, 0),
-			/* Data[8].ctlEdges[7].bChannel */ FREQ2FBIN(5795, 0)
+			/* Data[8].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5190, 0),
+			/* Data[8].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5230, 0),
+			/* Data[8].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5270, 0),
+			/* Data[8].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5510, 0),
+			/* Data[8].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5550, 0),
+			/* Data[8].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5670, 0),
+			/* Data[8].ctlEdges[6].bChannel */ (u8)FREQ2FBIN(5755, 0),
+			/* Data[8].ctlEdges[7].bChannel */ (u8)FREQ2FBIN(5795, 0)
 		}
 	},
 	.ctlPowerData_5G = {
@@ -1845,7 +1845,7 @@ static const struct ar9300_eeprom ar9300_x112 = {
 		 * spurChans[OSPrey_eeprom_modal_sPURS]; spur
 		 * channels in usual fbin coding format
 		 */
-		.spurChans = {FREQ2FBIN(2464, 1), 0, 0, 0, 0},
+		.spurChans = {(u8)FREQ2FBIN(2464, 1), 0, 0, 0, 0},
 
 		/*
 		 * noiseFloorThreshch[ar9300_max_cHAINS]; 3 Check
@@ -1879,9 +1879,9 @@ static const struct ar9300_eeprom ar9300_x112 = {
 		.tempslopextension = {0, 0, 0, 0, 0, 0, 0, 0}
 	},
 	.calFreqPier2G = {
-		FREQ2FBIN(2412, 1),
-		FREQ2FBIN(2437, 1),
-		FREQ2FBIN(2472, 1),
+		(u8)FREQ2FBIN(2412, 1),
+		(u8)FREQ2FBIN(2437, 1),
+		(u8)FREQ2FBIN(2472, 1),
 	},
 	/* ar9300_cal_data_per_freq_op_loop 2g */
 	.calPierData2G = {
@@ -1890,23 +1890,23 @@ static const struct ar9300_eeprom ar9300_x112 = {
 		{ {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0} },
 	},
 	.calTarget_freqbin_Cck = {
-		FREQ2FBIN(2412, 1),
-		FREQ2FBIN(2472, 1),
+		(u8)FREQ2FBIN(2412, 1),
+		(u8)FREQ2FBIN(2472, 1),
 	},
 	.calTarget_freqbin_2G = {
-		FREQ2FBIN(2412, 1),
-		FREQ2FBIN(2437, 1),
-		FREQ2FBIN(2472, 1)
+		(u8)FREQ2FBIN(2412, 1),
+		(u8)FREQ2FBIN(2437, 1),
+		(u8)FREQ2FBIN(2472, 1)
 	},
 	.calTarget_freqbin_2GHT20 = {
-		FREQ2FBIN(2412, 1),
-		FREQ2FBIN(2437, 1),
-		FREQ2FBIN(2472, 1)
+		(u8)FREQ2FBIN(2412, 1),
+		(u8)FREQ2FBIN(2437, 1),
+		(u8)FREQ2FBIN(2472, 1)
 	},
 	.calTarget_freqbin_2GHT40 = {
-		FREQ2FBIN(2412, 1),
-		FREQ2FBIN(2437, 1),
-		FREQ2FBIN(2472, 1)
+		(u8)FREQ2FBIN(2412, 1),
+		(u8)FREQ2FBIN(2437, 1),
+		(u8)FREQ2FBIN(2472, 1)
 	},
 	.calTargetPowerCck = {
 		/* 1L-5L,5S,11L,11s */
@@ -1935,84 +1935,84 @@ static const struct ar9300_eeprom ar9300_x112 = {
 	},
 	.ctl_freqbin_2G = {
 		{
-			FREQ2FBIN(2412, 1),
-			FREQ2FBIN(2417, 1),
-			FREQ2FBIN(2457, 1),
-			FREQ2FBIN(2462, 1)
+			(u8)FREQ2FBIN(2412, 1),
+			(u8)FREQ2FBIN(2417, 1),
+			(u8)FREQ2FBIN(2457, 1),
+			(u8)FREQ2FBIN(2462, 1)
 		},
 		{
-			FREQ2FBIN(2412, 1),
-			FREQ2FBIN(2417, 1),
-			FREQ2FBIN(2462, 1),
+			(u8)FREQ2FBIN(2412, 1),
+			(u8)FREQ2FBIN(2417, 1),
+			(u8)FREQ2FBIN(2462, 1),
 			0xFF,
 		},
 
 		{
-			FREQ2FBIN(2412, 1),
-			FREQ2FBIN(2417, 1),
-			FREQ2FBIN(2462, 1),
+			(u8)FREQ2FBIN(2412, 1),
+			(u8)FREQ2FBIN(2417, 1),
+			(u8)FREQ2FBIN(2462, 1),
 			0xFF,
 		},
 		{
-			FREQ2FBIN(2422, 1),
-			FREQ2FBIN(2427, 1),
-			FREQ2FBIN(2447, 1),
-			FREQ2FBIN(2452, 1)
+			(u8)FREQ2FBIN(2422, 1),
+			(u8)FREQ2FBIN(2427, 1),
+			(u8)FREQ2FBIN(2447, 1),
+			(u8)FREQ2FBIN(2452, 1)
 		},
 
 		{
-			/* Data[4].ctledges[0].bchannel */ FREQ2FBIN(2412, 1),
-			/* Data[4].ctledges[1].bchannel */ FREQ2FBIN(2417, 1),
-			/* Data[4].ctledges[2].bchannel */ FREQ2FBIN(2472, 1),
-			/* Data[4].ctledges[3].bchannel */ FREQ2FBIN(2484, 1),
+			/* Data[4].ctledges[0].bchannel */ (u8)FREQ2FBIN(2412, 1),
+			/* Data[4].ctledges[1].bchannel */ (u8)FREQ2FBIN(2417, 1),
+			/* Data[4].ctledges[2].bchannel */ (u8)FREQ2FBIN(2472, 1),
+			/* Data[4].ctledges[3].bchannel */ (u8)FREQ2FBIN(2484, 1),
 		},
 
 		{
-			/* Data[5].ctledges[0].bchannel */ FREQ2FBIN(2412, 1),
-			/* Data[5].ctledges[1].bchannel */ FREQ2FBIN(2417, 1),
-			/* Data[5].ctledges[2].bchannel */ FREQ2FBIN(2472, 1),
+			/* Data[5].ctledges[0].bchannel */ (u8)FREQ2FBIN(2412, 1),
+			/* Data[5].ctledges[1].bchannel */ (u8)FREQ2FBIN(2417, 1),
+			/* Data[5].ctledges[2].bchannel */ (u8)FREQ2FBIN(2472, 1),
 			0,
 		},
 
 		{
-			/* Data[6].ctledges[0].bchannel */ FREQ2FBIN(2412, 1),
-			/* Data[6].ctledges[1].bchannel */ FREQ2FBIN(2417, 1),
-			FREQ2FBIN(2472, 1),
+			/* Data[6].ctledges[0].bchannel */ (u8)FREQ2FBIN(2412, 1),
+			/* Data[6].ctledges[1].bchannel */ (u8)FREQ2FBIN(2417, 1),
+			(u8)FREQ2FBIN(2472, 1),
 			0,
 		},
 
 		{
-			/* Data[7].ctledges[0].bchannel */ FREQ2FBIN(2422, 1),
-			/* Data[7].ctledges[1].bchannel */ FREQ2FBIN(2427, 1),
-			/* Data[7].ctledges[2].bchannel */ FREQ2FBIN(2447, 1),
-			/* Data[7].ctledges[3].bchannel */ FREQ2FBIN(2462, 1),
+			/* Data[7].ctledges[0].bchannel */ (u8)FREQ2FBIN(2422, 1),
+			/* Data[7].ctledges[1].bchannel */ (u8)FREQ2FBIN(2427, 1),
+			/* Data[7].ctledges[2].bchannel */ (u8)FREQ2FBIN(2447, 1),
+			/* Data[7].ctledges[3].bchannel */ (u8)FREQ2FBIN(2462, 1),
 		},
 
 		{
-			/* Data[8].ctledges[0].bchannel */ FREQ2FBIN(2412, 1),
-			/* Data[8].ctledges[1].bchannel */ FREQ2FBIN(2417, 1),
-			/* Data[8].ctledges[2].bchannel */ FREQ2FBIN(2472, 1),
+			/* Data[8].ctledges[0].bchannel */ (u8)FREQ2FBIN(2412, 1),
+			/* Data[8].ctledges[1].bchannel */ (u8)FREQ2FBIN(2417, 1),
+			/* Data[8].ctledges[2].bchannel */ (u8)FREQ2FBIN(2472, 1),
 		},
 
 		{
-			/* Data[9].ctledges[0].bchannel */ FREQ2FBIN(2412, 1),
-			/* Data[9].ctledges[1].bchannel */ FREQ2FBIN(2417, 1),
-			/* Data[9].ctledges[2].bchannel */ FREQ2FBIN(2472, 1),
+			/* Data[9].ctledges[0].bchannel */ (u8)FREQ2FBIN(2412, 1),
+			/* Data[9].ctledges[1].bchannel */ (u8)FREQ2FBIN(2417, 1),
+			/* Data[9].ctledges[2].bchannel */ (u8)FREQ2FBIN(2472, 1),
 			0
 		},
 
 		{
-			/* Data[10].ctledges[0].bchannel */ FREQ2FBIN(2412, 1),
-			/* Data[10].ctledges[1].bchannel */ FREQ2FBIN(2417, 1),
-			/* Data[10].ctledges[2].bchannel */ FREQ2FBIN(2472, 1),
+			/* Data[10].ctledges[0].bchannel */ (u8)FREQ2FBIN(2412, 1),
+			/* Data[10].ctledges[1].bchannel */ (u8)FREQ2FBIN(2417, 1),
+			/* Data[10].ctledges[2].bchannel */ (u8)FREQ2FBIN(2472, 1),
 			0
 		},
 
 		{
-			/* Data[11].ctledges[0].bchannel */ FREQ2FBIN(2422, 1),
-			/* Data[11].ctledges[1].bchannel */ FREQ2FBIN(2427, 1),
-			/* Data[11].ctledges[2].bchannel */ FREQ2FBIN(2447, 1),
-			/* Data[11].ctledges[3].bchannel */ FREQ2FBIN(2462, 1),
+			/* Data[11].ctledges[0].bchannel */ (u8)FREQ2FBIN(2422, 1),
+			/* Data[11].ctledges[1].bchannel */ (u8)FREQ2FBIN(2427, 1),
+			/* Data[11].ctledges[2].bchannel */ (u8)FREQ2FBIN(2447, 1),
+			/* Data[11].ctledges[3].bchannel */ (u8)FREQ2FBIN(2462, 1),
 		}
 	},
 	.ctlPowerData_2G = {
@@ -2085,14 +2085,14 @@ static const struct ar9300_eeprom ar9300_x112 = {
 		.xatten1MarginHigh = {0x10, 0x10, 0x10}
 	},
 	.calFreqPier5G = {
-		FREQ2FBIN(5180, 0),
-		FREQ2FBIN(5220, 0),
-		FREQ2FBIN(5320, 0),
-		FREQ2FBIN(5400, 0),
-		FREQ2FBIN(5500, 0),
-		FREQ2FBIN(5600, 0),
-		FREQ2FBIN(5700, 0),
-		FREQ2FBIN(5785, 0)
+		(u8)FREQ2FBIN(5180, 0),
+		(u8)FREQ2FBIN(5220, 0),
+		(u8)FREQ2FBIN(5320, 0),
+		(u8)FREQ2FBIN(5400, 0),
+		(u8)FREQ2FBIN(5500, 0),
+		(u8)FREQ2FBIN(5600, 0),
+		(u8)FREQ2FBIN(5700, 0),
+		(u8)FREQ2FBIN(5785, 0)
 	},
 	.calPierData5G = {
 		{
@@ -2128,34 +2128,34 @@ static const struct ar9300_eeprom ar9300_x112 = {
 
 	},
 	.calTarget_freqbin_5G = {
-		FREQ2FBIN(5180, 0),
-		FREQ2FBIN(5220, 0),
-		FREQ2FBIN(5320, 0),
-		FREQ2FBIN(5400, 0),
-		FREQ2FBIN(5500, 0),
-		FREQ2FBIN(5600, 0),
-		FREQ2FBIN(5725, 0),
-		FREQ2FBIN(5825, 0)
+		(u8)FREQ2FBIN(5180, 0),
+		(u8)FREQ2FBIN(5220, 0),
+		(u8)FREQ2FBIN(5320, 0),
+		(u8)FREQ2FBIN(5400, 0),
+		(u8)FREQ2FBIN(5500, 0),
+		(u8)FREQ2FBIN(5600, 0),
+		(u8)FREQ2FBIN(5725, 0),
+		(u8)FREQ2FBIN(5825, 0)
 	},
 	.calTarget_freqbin_5GHT20 = {
-		FREQ2FBIN(5180, 0),
-		FREQ2FBIN(5220, 0),
-		FREQ2FBIN(5320, 0),
-		FREQ2FBIN(5400, 0),
-		FREQ2FBIN(5500, 0),
-		FREQ2FBIN(5600, 0),
-		FREQ2FBIN(5725, 0),
-		FREQ2FBIN(5825, 0)
+		(u8)FREQ2FBIN(5180, 0),
+		(u8)FREQ2FBIN(5220, 0),
+		(u8)FREQ2FBIN(5320, 0),
+		(u8)FREQ2FBIN(5400, 0),
+		(u8)FREQ2FBIN(5500, 0),
+		(u8)FREQ2FBIN(5600, 0),
+		(u8)FREQ2FBIN(5725, 0),
+		(u8)FREQ2FBIN(5825, 0)
 	},
 	.calTarget_freqbin_5GHT40 = {
-		FREQ2FBIN(5180, 0),
-		FREQ2FBIN(5220, 0),
-		FREQ2FBIN(5320, 0),
-		FREQ2FBIN(5400, 0),
-		FREQ2FBIN(5500, 0),
-		FREQ2FBIN(5600, 0),
-		FREQ2FBIN(5725, 0),
-		FREQ2FBIN(5825, 0)
+		(u8)FREQ2FBIN(5180, 0),
+		(u8)FREQ2FBIN(5220, 0),
+		(u8)FREQ2FBIN(5320, 0),
+		(u8)FREQ2FBIN(5400, 0),
+		(u8)FREQ2FBIN(5500, 0),
+		(u8)FREQ2FBIN(5600, 0),
+		(u8)FREQ2FBIN(5725, 0),
+		(u8)FREQ2FBIN(5825, 0)
 	},
 	.calTargetPower5G = {
 		/* 6-24,36,48,54 */
@@ -2202,53 +2202,53 @@ static const struct ar9300_eeprom ar9300_x112 = {
 	},
 	.ctl_freqbin_5G =  {
 		{
-			/* Data[0].ctledges[0].bchannel */ FREQ2FBIN(5180, 0),
-			/* Data[0].ctledges[1].bchannel */ FREQ2FBIN(5260, 0),
-			/* Data[0].ctledges[2].bchannel */ FREQ2FBIN(5280, 0),
-			/* Data[0].ctledges[3].bchannel */ FREQ2FBIN(5500, 0),
-			/* Data[0].ctledges[4].bchannel */ FREQ2FBIN(5600, 0),
-			/* Data[0].ctledges[5].bchannel */ FREQ2FBIN(5700, 0),
-			/* Data[0].ctledges[6].bchannel */ FREQ2FBIN(5745, 0),
-			/* Data[0].ctledges[7].bchannel */ FREQ2FBIN(5825, 0)
+			/* Data[0].ctledges[0].bchannel */ (u8)FREQ2FBIN(5180, 0),
+			/* Data[0].ctledges[1].bchannel */ (u8)FREQ2FBIN(5260, 0),
+			/* Data[0].ctledges[2].bchannel */ (u8)FREQ2FBIN(5280, 0),
+			/* Data[0].ctledges[3].bchannel */ (u8)FREQ2FBIN(5500, 0),
+			/* Data[0].ctledges[4].bchannel */ (u8)FREQ2FBIN(5600, 0),
+			/* Data[0].ctledges[5].bchannel */ (u8)FREQ2FBIN(5700, 0),
+			/* Data[0].ctledges[6].bchannel */ (u8)FREQ2FBIN(5745, 0),
+			/* Data[0].ctledges[7].bchannel */ (u8)FREQ2FBIN(5825, 0)
 		},
 		{
-			/* Data[1].ctledges[0].bchannel */ FREQ2FBIN(5180, 0),
-			/* Data[1].ctledges[1].bchannel */ FREQ2FBIN(5260, 0),
-			/* Data[1].ctledges[2].bchannel */ FREQ2FBIN(5280, 0),
-			/* Data[1].ctledges[3].bchannel */ FREQ2FBIN(5500, 0),
-			/* Data[1].ctledges[4].bchannel */ FREQ2FBIN(5520, 0),
-			/* Data[1].ctledges[5].bchannel */ FREQ2FBIN(5700, 0),
-			/* Data[1].ctledges[6].bchannel */ FREQ2FBIN(5745, 0),
-			/* Data[1].ctledges[7].bchannel */ FREQ2FBIN(5825, 0)
-		},
-
-		{
-			/* Data[2].ctledges[0].bchannel */ FREQ2FBIN(5190, 0),
-			/* Data[2].ctledges[1].bchannel */ FREQ2FBIN(5230, 0),
-			/* Data[2].ctledges[2].bchannel */ FREQ2FBIN(5270, 0),
-			/* Data[2].ctledges[3].bchannel */ FREQ2FBIN(5310, 0),
-			/* Data[2].ctledges[4].bchannel */ FREQ2FBIN(5510, 0),
-			/* Data[2].ctledges[5].bchannel */ FREQ2FBIN(5550, 0),
-			/* Data[2].ctledges[6].bchannel */ FREQ2FBIN(5670, 0),
-			/* Data[2].ctledges[7].bchannel */ FREQ2FBIN(5755, 0)
+			/* Data[1].ctledges[0].bchannel */ (u8)FREQ2FBIN(5180, 0),
+			/* Data[1].ctledges[1].bchannel */ (u8)FREQ2FBIN(5260, 0),
+			/* Data[1].ctledges[2].bchannel */ (u8)FREQ2FBIN(5280, 0),
+			/* Data[1].ctledges[3].bchannel */ (u8)FREQ2FBIN(5500, 0),
+			/* Data[1].ctledges[4].bchannel */ (u8)FREQ2FBIN(5520, 0),
+			/* Data[1].ctledges[5].bchannel */ (u8)FREQ2FBIN(5700, 0),
+			/* Data[1].ctledges[6].bchannel */ (u8)FREQ2FBIN(5745, 0),
+			/* Data[1].ctledges[7].bchannel */ (u8)FREQ2FBIN(5825, 0)
 		},
 
 		{
-			/* Data[3].ctledges[0].bchannel */ FREQ2FBIN(5180, 0),
-			/* Data[3].ctledges[1].bchannel */ FREQ2FBIN(5200, 0),
-			/* Data[3].ctledges[2].bchannel */ FREQ2FBIN(5260, 0),
-			/* Data[3].ctledges[3].bchannel */ FREQ2FBIN(5320, 0),
-			/* Data[3].ctledges[4].bchannel */ FREQ2FBIN(5500, 0),
-			/* Data[3].ctledges[5].bchannel */ FREQ2FBIN(5700, 0),
+			/* Data[2].ctledges[0].bchannel */ (u8)FREQ2FBIN(5190, 0),
+			/* Data[2].ctledges[1].bchannel */ (u8)FREQ2FBIN(5230, 0),
+			/* Data[2].ctledges[2].bchannel */ (u8)FREQ2FBIN(5270, 0),
+			/* Data[2].ctledges[3].bchannel */ (u8)FREQ2FBIN(5310, 0),
+			/* Data[2].ctledges[4].bchannel */ (u8)FREQ2FBIN(5510, 0),
+			/* Data[2].ctledges[5].bchannel */ (u8)FREQ2FBIN(5550, 0),
+			/* Data[2].ctledges[6].bchannel */ (u8)FREQ2FBIN(5670, 0),
+			/* Data[2].ctledges[7].bchannel */ (u8)FREQ2FBIN(5755, 0)
+		},
+
+		{
+			/* Data[3].ctledges[0].bchannel */ (u8)FREQ2FBIN(5180, 0),
+			/* Data[3].ctledges[1].bchannel */ (u8)FREQ2FBIN(5200, 0),
+			/* Data[3].ctledges[2].bchannel */ (u8)FREQ2FBIN(5260, 0),
+			/* Data[3].ctledges[3].bchannel */ (u8)FREQ2FBIN(5320, 0),
+			/* Data[3].ctledges[4].bchannel */ (u8)FREQ2FBIN(5500, 0),
+			/* Data[3].ctledges[5].bchannel */ (u8)FREQ2FBIN(5700, 0),
 			/* Data[3].ctledges[6].bchannel */ 0xFF,
 			/* Data[3].ctledges[7].bchannel */ 0xFF,
 		},
 
 		{
-			/* Data[4].ctledges[0].bchannel */ FREQ2FBIN(5180, 0),
-			/* Data[4].ctledges[1].bchannel */ FREQ2FBIN(5260, 0),
-			/* Data[4].ctledges[2].bchannel */ FREQ2FBIN(5500, 0),
-			/* Data[4].ctledges[3].bchannel */ FREQ2FBIN(5700, 0),
+			/* Data[4].ctledges[0].bchannel */ (u8)FREQ2FBIN(5180, 0),
+			/* Data[4].ctledges[1].bchannel */ (u8)FREQ2FBIN(5260, 0),
+			/* Data[4].ctledges[2].bchannel */ (u8)FREQ2FBIN(5500, 0),
+			/* Data[4].ctledges[3].bchannel */ (u8)FREQ2FBIN(5700, 0),
 			/* Data[4].ctledges[4].bchannel */ 0xFF,
 			/* Data[4].ctledges[5].bchannel */ 0xFF,
 			/* Data[4].ctledges[6].bchannel */ 0xFF,
@@ -2256,47 +2256,47 @@ static const struct ar9300_eeprom ar9300_x112 = {
 		},
 
 		{
-			/* Data[5].ctledges[0].bchannel */ FREQ2FBIN(5190, 0),
-			/* Data[5].ctledges[1].bchannel */ FREQ2FBIN(5270, 0),
-			/* Data[5].ctledges[2].bchannel */ FREQ2FBIN(5310, 0),
-			/* Data[5].ctledges[3].bchannel */ FREQ2FBIN(5510, 0),
-			/* Data[5].ctledges[4].bchannel */ FREQ2FBIN(5590, 0),
-			/* Data[5].ctledges[5].bchannel */ FREQ2FBIN(5670, 0),
+			/* Data[5].ctledges[0].bchannel */ (u8)FREQ2FBIN(5190, 0),
+			/* Data[5].ctledges[1].bchannel */ (u8)FREQ2FBIN(5270, 0),
+			/* Data[5].ctledges[2].bchannel */ (u8)FREQ2FBIN(5310, 0),
+			/* Data[5].ctledges[3].bchannel */ (u8)FREQ2FBIN(5510, 0),
+			/* Data[5].ctledges[4].bchannel */ (u8)FREQ2FBIN(5590, 0),
+			/* Data[5].ctledges[5].bchannel */ (u8)FREQ2FBIN(5670, 0),
 			/* Data[5].ctledges[6].bchannel */ 0xFF,
 			/* Data[5].ctledges[7].bchannel */ 0xFF
 		},
 
 		{
-			/* Data[6].ctledges[0].bchannel */ FREQ2FBIN(5180, 0),
-			/* Data[6].ctledges[1].bchannel */ FREQ2FBIN(5200, 0),
-			/* Data[6].ctledges[2].bchannel */ FREQ2FBIN(5220, 0),
-			/* Data[6].ctledges[3].bchannel */ FREQ2FBIN(5260, 0),
-			/* Data[6].ctledges[4].bchannel */ FREQ2FBIN(5500, 0),
-			/* Data[6].ctledges[5].bchannel */ FREQ2FBIN(5600, 0),
-			/* Data[6].ctledges[6].bchannel */ FREQ2FBIN(5700, 0),
-			/* Data[6].ctledges[7].bchannel */ FREQ2FBIN(5745, 0)
+			/* Data[6].ctledges[0].bchannel */ (u8)FREQ2FBIN(5180, 0),
+			/* Data[6].ctledges[1].bchannel */ (u8)FREQ2FBIN(5200, 0),
+			/* Data[6].ctledges[2].bchannel */ (u8)FREQ2FBIN(5220, 0),
+			/* Data[6].ctledges[3].bchannel */ (u8)FREQ2FBIN(5260, 0),
+			/* Data[6].ctledges[4].bchannel */ (u8)FREQ2FBIN(5500, 0),
+			/* Data[6].ctledges[5].bchannel */ (u8)FREQ2FBIN(5600, 0),
+			/* Data[6].ctledges[6].bchannel */ (u8)FREQ2FBIN(5700, 0),
+			/* Data[6].ctledges[7].bchannel */ (u8)FREQ2FBIN(5745, 0)
 		},
 
 		{
-			/* Data[7].ctledges[0].bchannel */ FREQ2FBIN(5180, 0),
-			/* Data[7].ctledges[1].bchannel */ FREQ2FBIN(5260, 0),
-			/* Data[7].ctledges[2].bchannel */ FREQ2FBIN(5320, 0),
-			/* Data[7].ctledges[3].bchannel */ FREQ2FBIN(5500, 0),
-			/* Data[7].ctledges[4].bchannel */ FREQ2FBIN(5560, 0),
-			/* Data[7].ctledges[5].bchannel */ FREQ2FBIN(5700, 0),
-			/* Data[7].ctledges[6].bchannel */ FREQ2FBIN(5745, 0),
-			/* Data[7].ctledges[7].bchannel */ FREQ2FBIN(5825, 0)
+			/* Data[7].ctledges[0].bchannel */ (u8)FREQ2FBIN(5180, 0),
+			/* Data[7].ctledges[1].bchannel */ (u8)FREQ2FBIN(5260, 0),
+			/* Data[7].ctledges[2].bchannel */ (u8)FREQ2FBIN(5320, 0),
+			/* Data[7].ctledges[3].bchannel */ (u8)FREQ2FBIN(5500, 0),
+			/* Data[7].ctledges[4].bchannel */ (u8)FREQ2FBIN(5560, 0),
+			/* Data[7].ctledges[5].bchannel */ (u8)FREQ2FBIN(5700, 0),
+			/* Data[7].ctledges[6].bchannel */ (u8)FREQ2FBIN(5745, 0),
+			/* Data[7].ctledges[7].bchannel */ (u8)FREQ2FBIN(5825, 0)
 		},
 
 		{
-			/* Data[8].ctledges[0].bchannel */ FREQ2FBIN(5190, 0),
-			/* Data[8].ctledges[1].bchannel */ FREQ2FBIN(5230, 0),
-			/* Data[8].ctledges[2].bchannel */ FREQ2FBIN(5270, 0),
-			/* Data[8].ctledges[3].bchannel */ FREQ2FBIN(5510, 0),
-			/* Data[8].ctledges[4].bchannel */ FREQ2FBIN(5550, 0),
-			/* Data[8].ctledges[5].bchannel */ FREQ2FBIN(5670, 0),
-			/* Data[8].ctledges[6].bchannel */ FREQ2FBIN(5755, 0),
-			/* Data[8].ctledges[7].bchannel */ FREQ2FBIN(5795, 0)
+			/* Data[8].ctledges[0].bchannel */ (u8)FREQ2FBIN(5190, 0),
+			/* Data[8].ctledges[1].bchannel */ (u8)FREQ2FBIN(5230, 0),
+			/* Data[8].ctledges[2].bchannel */ (u8)FREQ2FBIN(5270, 0),
+			/* Data[8].ctledges[3].bchannel */ (u8)FREQ2FBIN(5510, 0),
+			/* Data[8].ctledges[4].bchannel */ (u8)FREQ2FBIN(5550, 0),
+			/* Data[8].ctledges[5].bchannel */ (u8)FREQ2FBIN(5670, 0),
+			/* Data[8].ctledges[6].bchannel */ (u8)FREQ2FBIN(5755, 0),
+			/* Data[8].ctledges[7].bchannel */ (u8)FREQ2FBIN(5795, 0)
 		}
 	},
 	.ctlPowerData_5G = {
@@ -2423,7 +2423,7 @@ static const struct ar9300_eeprom ar9300_h116 = {
 		 * spurChans[OSPREY_EEPROM_MODAL_SPURS]; spur
 		 * channels in usual fbin coding format
 		 */
-		.spurChans = {FREQ2FBIN(2464, 1), 0, 0, 0, 0},
+		.spurChans = {(u8)FREQ2FBIN(2464, 1), 0, 0, 0, 0},
 
 		/*
 		 * noiseFloorThreshCh[AR9300_MAX_CHAINS]; 3 Check
@@ -2457,9 +2457,9 @@ static const struct ar9300_eeprom ar9300_h116 = {
 		.tempslopextension = {0, 0, 0, 0, 0, 0, 0, 0}
 	 },
 	.calFreqPier2G = {
-		FREQ2FBIN(2412, 1),
-		FREQ2FBIN(2437, 1),
-		FREQ2FBIN(2462, 1),
+		(u8)FREQ2FBIN(2412, 1),
+		(u8)FREQ2FBIN(2437, 1),
+		(u8)FREQ2FBIN(2462, 1),
 	 },
 	/* ar9300_cal_data_per_freq_op_loop 2g */
 	.calPierData2G = {
@@ -2468,23 +2468,23 @@ static const struct ar9300_eeprom ar9300_h116 = {
 		{ {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0} },
 	 },
 	.calTarget_freqbin_Cck = {
-		FREQ2FBIN(2412, 1),
-		FREQ2FBIN(2472, 1),
+		(u8)FREQ2FBIN(2412, 1),
+		(u8)FREQ2FBIN(2472, 1),
 	 },
 	.calTarget_freqbin_2G = {
-		FREQ2FBIN(2412, 1),
-		FREQ2FBIN(2437, 1),
-		FREQ2FBIN(2472, 1)
+		(u8)FREQ2FBIN(2412, 1),
+		(u8)FREQ2FBIN(2437, 1),
+		(u8)FREQ2FBIN(2472, 1)
 	 },
 	.calTarget_freqbin_2GHT20 = {
-		FREQ2FBIN(2412, 1),
-		FREQ2FBIN(2437, 1),
-		FREQ2FBIN(2472, 1)
+		(u8)FREQ2FBIN(2412, 1),
+		(u8)FREQ2FBIN(2437, 1),
+		(u8)FREQ2FBIN(2472, 1)
 	 },
 	.calTarget_freqbin_2GHT40 = {
-		FREQ2FBIN(2412, 1),
-		FREQ2FBIN(2437, 1),
-		FREQ2FBIN(2472, 1)
+		(u8)FREQ2FBIN(2412, 1),
+		(u8)FREQ2FBIN(2437, 1),
+		(u8)FREQ2FBIN(2472, 1)
 	 },
 	.calTargetPowerCck = {
 		 /* 1L-5L,5S,11L,11S */
@@ -2513,84 +2513,84 @@ static const struct ar9300_eeprom ar9300_h116 = {
 	},
 	.ctl_freqbin_2G = {
 		{
-			FREQ2FBIN(2412, 1),
-			FREQ2FBIN(2417, 1),
-			FREQ2FBIN(2457, 1),
-			FREQ2FBIN(2462, 1)
+			(u8)FREQ2FBIN(2412, 1),
+			(u8)FREQ2FBIN(2417, 1),
+			(u8)FREQ2FBIN(2457, 1),
+			(u8)FREQ2FBIN(2462, 1)
 		},
 		{
-			FREQ2FBIN(2412, 1),
-			FREQ2FBIN(2417, 1),
-			FREQ2FBIN(2462, 1),
+			(u8)FREQ2FBIN(2412, 1),
+			(u8)FREQ2FBIN(2417, 1),
+			(u8)FREQ2FBIN(2462, 1),
 			0xFF,
 		},
 
 		{
-			FREQ2FBIN(2412, 1),
-			FREQ2FBIN(2417, 1),
-			FREQ2FBIN(2462, 1),
+			(u8)FREQ2FBIN(2412, 1),
+			(u8)FREQ2FBIN(2417, 1),
+			(u8)FREQ2FBIN(2462, 1),
 			0xFF,
 		},
 		{
-			FREQ2FBIN(2422, 1),
-			FREQ2FBIN(2427, 1),
-			FREQ2FBIN(2447, 1),
-			FREQ2FBIN(2452, 1)
+			(u8)FREQ2FBIN(2422, 1),
+			(u8)FREQ2FBIN(2427, 1),
+			(u8)FREQ2FBIN(2447, 1),
+			(u8)FREQ2FBIN(2452, 1)
 		},
 
 		{
-			/* Data[4].ctlEdges[0].bChannel */ FREQ2FBIN(2412, 1),
-			/* Data[4].ctlEdges[1].bChannel */ FREQ2FBIN(2417, 1),
-			/* Data[4].ctlEdges[2].bChannel */ FREQ2FBIN(2472, 1),
-			/* Data[4].ctlEdges[3].bChannel */ FREQ2FBIN(2484, 1),
+			/* Data[4].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2412, 1),
+			/* Data[4].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2417, 1),
+			/* Data[4].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(2472, 1),
+			/* Data[4].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(2484, 1),
 		},
 
 		{
-			/* Data[5].ctlEdges[0].bChannel */ FREQ2FBIN(2412, 1),
-			/* Data[5].ctlEdges[1].bChannel */ FREQ2FBIN(2417, 1),
-			/* Data[5].ctlEdges[2].bChannel */ FREQ2FBIN(2472, 1),
+			/* Data[5].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2412, 1),
+			/* Data[5].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2417, 1),
+			/* Data[5].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(2472, 1),
 			0,
 		},
 
 		{
-			/* Data[6].ctlEdges[0].bChannel */ FREQ2FBIN(2412, 1),
-			/* Data[6].ctlEdges[1].bChannel */ FREQ2FBIN(2417, 1),
-			FREQ2FBIN(2472, 1),
+			/* Data[6].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2412, 1),
+			/* Data[6].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2417, 1),
+			(u8)FREQ2FBIN(2472, 1),
 			0,
 		},
 
 		{
-			/* Data[7].ctlEdges[0].bChannel */ FREQ2FBIN(2422, 1),
-			/* Data[7].ctlEdges[1].bChannel */ FREQ2FBIN(2427, 1),
-			/* Data[7].ctlEdges[2].bChannel */ FREQ2FBIN(2447, 1),
-			/* Data[7].ctlEdges[3].bChannel */ FREQ2FBIN(2462, 1),
+			/* Data[7].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2422, 1),
+			/* Data[7].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2427, 1),
+			/* Data[7].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(2447, 1),
+			/* Data[7].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(2462, 1),
 		},
 
 		{
-			/* Data[8].ctlEdges[0].bChannel */ FREQ2FBIN(2412, 1),
-			/* Data[8].ctlEdges[1].bChannel */ FREQ2FBIN(2417, 1),
-			/* Data[8].ctlEdges[2].bChannel */ FREQ2FBIN(2472, 1),
+			/* Data[8].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2412, 1),
+			/* Data[8].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2417, 1),
+			/* Data[8].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(2472, 1),
 		},
 
 		{
-			/* Data[9].ctlEdges[0].bChannel */ FREQ2FBIN(2412, 1),
-			/* Data[9].ctlEdges[1].bChannel */ FREQ2FBIN(2417, 1),
-			/* Data[9].ctlEdges[2].bChannel */ FREQ2FBIN(2472, 1),
+			/* Data[9].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2412, 1),
+			/* Data[9].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2417, 1),
+			/* Data[9].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(2472, 1),
 			0
 		},
 
 		{
-			/* Data[10].ctlEdges[0].bChannel */ FREQ2FBIN(2412, 1),
-			/* Data[10].ctlEdges[1].bChannel */ FREQ2FBIN(2417, 1),
-			/* Data[10].ctlEdges[2].bChannel */ FREQ2FBIN(2472, 1),
+			/* Data[10].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2412, 1),
+			/* Data[10].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2417, 1),
+			/* Data[10].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(2472, 1),
 			0
 		},
 
 		{
-			/* Data[11].ctlEdges[0].bChannel */ FREQ2FBIN(2422, 1),
-			/* Data[11].ctlEdges[1].bChannel */ FREQ2FBIN(2427, 1),
-			/* Data[11].ctlEdges[2].bChannel */ FREQ2FBIN(2447, 1),
-			/* Data[11].ctlEdges[3].bChannel */ FREQ2FBIN(2462, 1),
+			/* Data[11].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(2422, 1),
+			/* Data[11].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(2427, 1),
+			/* Data[11].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(2447, 1),
+			/* Data[11].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(2462, 1),
 		}
 	 },
 	.ctlPowerData_2G = {
@@ -2663,14 +2663,14 @@ static const struct ar9300_eeprom ar9300_h116 = {
 		.xatten1MarginHigh = {0, 0, 0}
 	 },
 	.calFreqPier5G = {
-		FREQ2FBIN(5160, 0),
-		FREQ2FBIN(5220, 0),
-		FREQ2FBIN(5320, 0),
-		FREQ2FBIN(5400, 0),
-		FREQ2FBIN(5500, 0),
-		FREQ2FBIN(5600, 0),
-		FREQ2FBIN(5700, 0),
-		FREQ2FBIN(5785, 0)
+		(u8)FREQ2FBIN(5160, 0),
+		(u8)FREQ2FBIN(5220, 0),
+		(u8)FREQ2FBIN(5320, 0),
+		(u8)FREQ2FBIN(5400, 0),
+		(u8)FREQ2FBIN(5500, 0),
+		(u8)FREQ2FBIN(5600, 0),
+		(u8)FREQ2FBIN(5700, 0),
+		(u8)FREQ2FBIN(5785, 0)
 	},
 	.calPierData5G = {
 			{
@@ -2706,34 +2706,34 @@ static const struct ar9300_eeprom ar9300_h116 = {
 
 	},
 	.calTarget_freqbin_5G = {
-		FREQ2FBIN(5180, 0),
-		FREQ2FBIN(5240, 0),
-		FREQ2FBIN(5320, 0),
-		FREQ2FBIN(5400, 0),
-		FREQ2FBIN(5500, 0),
-		FREQ2FBIN(5600, 0),
-		FREQ2FBIN(5700, 0),
-		FREQ2FBIN(5825, 0)
+		(u8)FREQ2FBIN(5180, 0),
+		(u8)FREQ2FBIN(5240, 0),
+		(u8)FREQ2FBIN(5320, 0),
+		(u8)FREQ2FBIN(5400, 0),
+		(u8)FREQ2FBIN(5500, 0),
+		(u8)FREQ2FBIN(5600, 0),
+		(u8)FREQ2FBIN(5700, 0),
+		(u8)FREQ2FBIN(5825, 0)
 	},
 	.calTarget_freqbin_5GHT20 = {
-		FREQ2FBIN(5180, 0),
-		FREQ2FBIN(5240, 0),
-		FREQ2FBIN(5320, 0),
-		FREQ2FBIN(5400, 0),
-		FREQ2FBIN(5500, 0),
-		FREQ2FBIN(5700, 0),
-		FREQ2FBIN(5745, 0),
-		FREQ2FBIN(5825, 0)
+		(u8)FREQ2FBIN(5180, 0),
+		(u8)FREQ2FBIN(5240, 0),
+		(u8)FREQ2FBIN(5320, 0),
+		(u8)FREQ2FBIN(5400, 0),
+		(u8)FREQ2FBIN(5500, 0),
+		(u8)FREQ2FBIN(5700, 0),
+		(u8)FREQ2FBIN(5745, 0),
+		(u8)FREQ2FBIN(5825, 0)
 	},
 	.calTarget_freqbin_5GHT40 = {
-		FREQ2FBIN(5180, 0),
-		FREQ2FBIN(5240, 0),
-		FREQ2FBIN(5320, 0),
-		FREQ2FBIN(5400, 0),
-		FREQ2FBIN(5500, 0),
-		FREQ2FBIN(5700, 0),
-		FREQ2FBIN(5745, 0),
-		FREQ2FBIN(5825, 0)
+		(u8)FREQ2FBIN(5180, 0),
+		(u8)FREQ2FBIN(5240, 0),
+		(u8)FREQ2FBIN(5320, 0),
+		(u8)FREQ2FBIN(5400, 0),
+		(u8)FREQ2FBIN(5500, 0),
+		(u8)FREQ2FBIN(5700, 0),
+		(u8)FREQ2FBIN(5745, 0),
+		(u8)FREQ2FBIN(5825, 0)
 	 },
 	.calTargetPower5G = {
 		/* 6-24,36,48,54 */
@@ -2780,53 +2780,53 @@ static const struct ar9300_eeprom ar9300_h116 = {
 	},
 	.ctl_freqbin_5G =  {
 		{
-			/* Data[0].ctlEdges[0].bChannel */ FREQ2FBIN(5180, 0),
-			/* Data[0].ctlEdges[1].bChannel */ FREQ2FBIN(5260, 0),
-			/* Data[0].ctlEdges[2].bChannel */ FREQ2FBIN(5280, 0),
-			/* Data[0].ctlEdges[3].bChannel */ FREQ2FBIN(5500, 0),
-			/* Data[0].ctlEdges[4].bChannel */ FREQ2FBIN(5600, 0),
-			/* Data[0].ctlEdges[5].bChannel */ FREQ2FBIN(5700, 0),
-			/* Data[0].ctlEdges[6].bChannel */ FREQ2FBIN(5745, 0),
-			/* Data[0].ctlEdges[7].bChannel */ FREQ2FBIN(5825, 0)
+			/* Data[0].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5180, 0),
+			/* Data[0].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5260, 0),
+			/* Data[0].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5280, 0),
+			/* Data[0].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5500, 0),
+			/* Data[0].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5600, 0),
+			/* Data[0].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5700, 0),
+			/* Data[0].ctlEdges[6].bChannel */ (u8)FREQ2FBIN(5745, 0),
+			/* Data[0].ctlEdges[7].bChannel */ (u8)FREQ2FBIN(5825, 0)
 		},
 		{
-			/* Data[1].ctlEdges[0].bChannel */ FREQ2FBIN(5180, 0),
-			/* Data[1].ctlEdges[1].bChannel */ FREQ2FBIN(5260, 0),
-			/* Data[1].ctlEdges[2].bChannel */ FREQ2FBIN(5280, 0),
-			/* Data[1].ctlEdges[3].bChannel */ FREQ2FBIN(5500, 0),
-			/* Data[1].ctlEdges[4].bChannel */ FREQ2FBIN(5520, 0),
-			/* Data[1].ctlEdges[5].bChannel */ FREQ2FBIN(5700, 0),
-			/* Data[1].ctlEdges[6].bChannel */ FREQ2FBIN(5745, 0),
-			/* Data[1].ctlEdges[7].bChannel */ FREQ2FBIN(5825, 0)
-		},
-
-		{
-			/* Data[2].ctlEdges[0].bChannel */ FREQ2FBIN(5190, 0),
-			/* Data[2].ctlEdges[1].bChannel */ FREQ2FBIN(5230, 0),
-			/* Data[2].ctlEdges[2].bChannel */ FREQ2FBIN(5270, 0),
-			/* Data[2].ctlEdges[3].bChannel */ FREQ2FBIN(5310, 0),
-			/* Data[2].ctlEdges[4].bChannel */ FREQ2FBIN(5510, 0),
-			/* Data[2].ctlEdges[5].bChannel */ FREQ2FBIN(5550, 0),
-			/* Data[2].ctlEdges[6].bChannel */ FREQ2FBIN(5670, 0),
-			/* Data[2].ctlEdges[7].bChannel */ FREQ2FBIN(5755, 0)
+			/* Data[1].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5180, 0),
+			/* Data[1].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5260, 0),
+			/* Data[1].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5280, 0),
+			/* Data[1].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5500, 0),
+			/* Data[1].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5520, 0),
+			/* Data[1].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5700, 0),
+			/* Data[1].ctlEdges[6].bChannel */ (u8)FREQ2FBIN(5745, 0),
+			/* Data[1].ctlEdges[7].bChannel */ (u8)FREQ2FBIN(5825, 0)
 		},
 
 		{
-			/* Data[3].ctlEdges[0].bChannel */ FREQ2FBIN(5180, 0),
-			/* Data[3].ctlEdges[1].bChannel */ FREQ2FBIN(5200, 0),
-			/* Data[3].ctlEdges[2].bChannel */ FREQ2FBIN(5260, 0),
-			/* Data[3].ctlEdges[3].bChannel */ FREQ2FBIN(5320, 0),
-			/* Data[3].ctlEdges[4].bChannel */ FREQ2FBIN(5500, 0),
-			/* Data[3].ctlEdges[5].bChannel */ FREQ2FBIN(5700, 0),
+			/* Data[2].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5190, 0),
+			/* Data[2].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5230, 0),
+			/* Data[2].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5270, 0),
+			/* Data[2].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5310, 0),
+			/* Data[2].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5510, 0),
+			/* Data[2].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5550, 0),
+			/* Data[2].ctlEdges[6].bChannel */ (u8)FREQ2FBIN(5670, 0),
+			/* Data[2].ctlEdges[7].bChannel */ (u8)FREQ2FBIN(5755, 0)
+		},
+
+		{
+			/* Data[3].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5180, 0),
+			/* Data[3].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5200, 0),
+			/* Data[3].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5260, 0),
+			/* Data[3].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5320, 0),
+			/* Data[3].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5500, 0),
+			/* Data[3].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5700, 0),
 			/* Data[3].ctlEdges[6].bChannel */ 0xFF,
 			/* Data[3].ctlEdges[7].bChannel */ 0xFF,
 		},
 
 		{
-			/* Data[4].ctlEdges[0].bChannel */ FREQ2FBIN(5180, 0),
-			/* Data[4].ctlEdges[1].bChannel */ FREQ2FBIN(5260, 0),
-			/* Data[4].ctlEdges[2].bChannel */ FREQ2FBIN(5500, 0),
-			/* Data[4].ctlEdges[3].bChannel */ FREQ2FBIN(5700, 0),
+			/* Data[4].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5180, 0),
+			/* Data[4].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5260, 0),
+			/* Data[4].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5500, 0),
+			/* Data[4].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5700, 0),
 			/* Data[4].ctlEdges[4].bChannel */ 0xFF,
 			/* Data[4].ctlEdges[5].bChannel */ 0xFF,
 			/* Data[4].ctlEdges[6].bChannel */ 0xFF,
@@ -2834,47 +2834,47 @@ static const struct ar9300_eeprom ar9300_h116 = {
 		},
 
 		{
-			/* Data[5].ctlEdges[0].bChannel */ FREQ2FBIN(5190, 0),
-			/* Data[5].ctlEdges[1].bChannel */ FREQ2FBIN(5270, 0),
-			/* Data[5].ctlEdges[2].bChannel */ FREQ2FBIN(5310, 0),
-			/* Data[5].ctlEdges[3].bChannel */ FREQ2FBIN(5510, 0),
-			/* Data[5].ctlEdges[4].bChannel */ FREQ2FBIN(5590, 0),
-			/* Data[5].ctlEdges[5].bChannel */ FREQ2FBIN(5670, 0),
+			/* Data[5].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5190, 0),
+			/* Data[5].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5270, 0),
+			/* Data[5].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5310, 0),
+			/* Data[5].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5510, 0),
+			/* Data[5].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5590, 0),
+			/* Data[5].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5670, 0),
 			/* Data[5].ctlEdges[6].bChannel */ 0xFF,
 			/* Data[5].ctlEdges[7].bChannel */ 0xFF
 		},
 
 		{
-			/* Data[6].ctlEdges[0].bChannel */ FREQ2FBIN(5180, 0),
-			/* Data[6].ctlEdges[1].bChannel */ FREQ2FBIN(5200, 0),
-			/* Data[6].ctlEdges[2].bChannel */ FREQ2FBIN(5220, 0),
-			/* Data[6].ctlEdges[3].bChannel */ FREQ2FBIN(5260, 0),
-			/* Data[6].ctlEdges[4].bChannel */ FREQ2FBIN(5500, 0),
-			/* Data[6].ctlEdges[5].bChannel */ FREQ2FBIN(5600, 0),
-			/* Data[6].ctlEdges[6].bChannel */ FREQ2FBIN(5700, 0),
-			/* Data[6].ctlEdges[7].bChannel */ FREQ2FBIN(5745, 0)
+			/* Data[6].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5180, 0),
+			/* Data[6].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5200, 0),
+			/* Data[6].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5220, 0),
+			/* Data[6].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5260, 0),
+			/* Data[6].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5500, 0),
+			/* Data[6].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5600, 0),
+			/* Data[6].ctlEdges[6].bChannel */ (u8)FREQ2FBIN(5700, 0),
+			/* Data[6].ctlEdges[7].bChannel */ (u8)FREQ2FBIN(5745, 0)
 		},
 
 		{
-			/* Data[7].ctlEdges[0].bChannel */ FREQ2FBIN(5180, 0),
-			/* Data[7].ctlEdges[1].bChannel */ FREQ2FBIN(5260, 0),
-			/* Data[7].ctlEdges[2].bChannel */ FREQ2FBIN(5320, 0),
-			/* Data[7].ctlEdges[3].bChannel */ FREQ2FBIN(5500, 0),
-			/* Data[7].ctlEdges[4].bChannel */ FREQ2FBIN(5560, 0),
-			/* Data[7].ctlEdges[5].bChannel */ FREQ2FBIN(5700, 0),
-			/* Data[7].ctlEdges[6].bChannel */ FREQ2FBIN(5745, 0),
-			/* Data[7].ctlEdges[7].bChannel */ FREQ2FBIN(5825, 0)
+			/* Data[7].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5180, 0),
+			/* Data[7].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5260, 0),
+			/* Data[7].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5320, 0),
+			/* Data[7].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5500, 0),
+			/* Data[7].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5560, 0),
+			/* Data[7].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5700, 0),
+			/* Data[7].ctlEdges[6].bChannel */ (u8)FREQ2FBIN(5745, 0),
+			/* Data[7].ctlEdges[7].bChannel */ (u8)FREQ2FBIN(5825, 0)
 		},
 
 		{
-			/* Data[8].ctlEdges[0].bChannel */ FREQ2FBIN(5190, 0),
-			/* Data[8].ctlEdges[1].bChannel */ FREQ2FBIN(5230, 0),
-			/* Data[8].ctlEdges[2].bChannel */ FREQ2FBIN(5270, 0),
-			/* Data[8].ctlEdges[3].bChannel */ FREQ2FBIN(5510, 0),
-			/* Data[8].ctlEdges[4].bChannel */ FREQ2FBIN(5550, 0),
-			/* Data[8].ctlEdges[5].bChannel */ FREQ2FBIN(5670, 0),
-			/* Data[8].ctlEdges[6].bChannel */ FREQ2FBIN(5755, 0),
-			/* Data[8].ctlEdges[7].bChannel */ FREQ2FBIN(5795, 0)
+			/* Data[8].ctlEdges[0].bChannel */ (u8)FREQ2FBIN(5190, 0),
+			/* Data[8].ctlEdges[1].bChannel */ (u8)FREQ2FBIN(5230, 0),
+			/* Data[8].ctlEdges[2].bChannel */ (u8)FREQ2FBIN(5270, 0),
+			/* Data[8].ctlEdges[3].bChannel */ (u8)FREQ2FBIN(5510, 0),
+			/* Data[8].ctlEdges[4].bChannel */ (u8)FREQ2FBIN(5550, 0),
+			/* Data[8].ctlEdges[5].bChannel */ (u8)FREQ2FBIN(5670, 0),
+			/* Data[8].ctlEdges[6].bChannel */ (u8)FREQ2FBIN(5755, 0),
+			/* Data[8].ctlEdges[7].bChannel */ (u8)FREQ2FBIN(5795, 0)
 		}
 	 },
 	.ctlPowerData_5G = {

@@ -3949,9 +3949,9 @@ static int decon_probe(struct platform_device *pdev)
 	if (ret)
 		goto err_pinctrl;
 
-	ret = decon_create_debugfs(decon);
-	if (ret)
-		goto err_pinctrl;
+	
+	
+		
 
 #ifdef CONFIG_DECON_HIBER
 	ret = decon_register_hiber_work(decon);
@@ -4057,8 +4057,8 @@ static int decon_remove(struct platform_device *pdev)
 		decon_release_windows(decon->win[i]);
 
 	debugfs_remove_recursive(decon->d.debug_root);
-	if (decon->d.event_log)
-		kfree(decon->d.event_log);
+	
+		
 
 	decon_info("remove sucessful\n");
 	return 0;

@@ -2140,9 +2140,9 @@ static int DRX_Start(struct drxd_state *state, s32 off)
 			}
 			break;
 		}
-		status = status;
-		if (status < 0)
-			break;
+		
+		
+			
 
 		switch (p->modulation) {
 		default:
@@ -2251,9 +2251,9 @@ static int DRX_Start(struct drxd_state *state, s32 off)
 			break;
 
 		}
-		status = status;
-		if (status < 0)
-			break;
+		
+		
+			
 
 		switch (DRX_CHANNEL_HIGH) {
 		default:
@@ -2317,9 +2317,9 @@ static int DRX_Start(struct drxd_state *state, s32 off)
 			}
 			break;
 		}
-		status = status;
-		if (status < 0)
-			break;
+		
+		
+			
 
 		/* First determine real bandwidth (Hz) */
 		/* Also set delay for impulse noise cruncher (only A2) */
